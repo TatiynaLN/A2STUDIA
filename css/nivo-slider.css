@@ -8,14 +8,7 @@
  */
 
 /* The Nivo Slider styles */
-.bacgraund-top {
-	position: absolute;
-	width: 100%;
-	height: 100px;
-	background-color: #000;
-	opacity: 0.8;
-	z-index: 1;
-}
+
 .slider {
 	width: 100%;
 	overflow: hidden;
@@ -38,13 +31,13 @@ li {
 	color: lavender;
 }
 /***************/
-.nivoSlider {
+.nivoslider {
 	position: relative;
 	width: 100%;
 	height: auto;
 	overflow: hidden;
 }
-.nivoSlider img {
+.nivoslider img {
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -57,7 +50,7 @@ li {
 }
 
 /* If an image is wrapped in a link */
-.nivoSlider a.nivo-imageLink {
+.nivoslider a.nivo-imageLink {
 	position: absolute;
 	top: 0px;
 	left: 0px;

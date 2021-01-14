@@ -53,3 +53,18 @@ $(window).load(function () {
 $(".toggle-icon").click(function () {
     $('#nav-container').toggleClass("pushed");
 });
+
+// active menu
+
+var mn = document.getElementById('cllu');
+var i;
+for (i = 0; i < mn.children.length - 1; i++) {
+    // mn.children[i].querySelector('a').classList.remove('active');
+    mn.children[i].querySelector('a').onclick = addp;
+}
+function addp() {
+    for (i = 0; i < mn.children.length - 1; i++) {
+        mn.children[i].querySelector('a').classList.remove('active');
+    }
+    this.classList.add('active');
+}
