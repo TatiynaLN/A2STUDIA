@@ -1,0 +1,76 @@
+@media screen and (max-width: 900px) {
+    .header-top {
+        font-size: 18px;
+    }
+    .top-container {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+    .logo-top {
+        display: none;
+    }
+    .tel {
+        justify-content: flex-end;
+        align-content: center;
+        span {
+            margin-left: 10px;
+        }
+    }
+    .top-box {
+        justify-content: flex-start;
+        align-content: center;
+    }
+    .contact {
+        margin-top: 9px;
+    }
+    .menu {
+        &__list {
+            margin-top: 25px;
+        }
+    }
+    .podmenu {
+        &__list {
+            font-size: 14px;
+        }
+    }
+}
+@media screen and (max-width: 720px) {
+    .podmenu {
+        &__list {
+            margin-left: -14px;
+            a {
+                padding: 0;
+            }
+        }
+    }
+    .top-container {
+        width: 99%;
+    }
+    .top-box {
+        padding-left: -20px;
+    }
+    .contact {
+        max-width: 195px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .top-box {
+        display: none;
+    }
+    .nivo-controlNav {
+        display: none;
+        padding: 0;
+    }
+    .nivo-caption {
+        padding: 0;
+        opacity: 0.2 !important;
+        height: 0px;
+    }
+    .header-top {
+        opacity: 1;
+        z-index: 1;
+        position: relative;
+    }
+}

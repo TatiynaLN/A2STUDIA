@@ -27,42 +27,15 @@ a {
     position: absolute;
     width: 100%;
     height: auto;
-    background-color: #000;
+    background-color: rgb(0, 0, 0);
     opacity: 0.8;
     z-index: 1;
+    font-size: 23px;
 }
-.logo-top {
-    max-width: 7rem;
-    img {
-        width: 100%;
-    }
-}
+
 .active {
     color: #cd0003;
 }
-.podmenu__list {
-    display: none;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.75);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    margin-left: -14px;
-    // margin-top: -90px;
-}
-
-.podmenu__list a {
-    float: none;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-.list__podmenu:hover .podmenu__list,
-.list__podmenu:focus .podmenu__list {
-    display: block;
-}
-
 // .footer-menu {
 //     position: relative;
 // }
@@ -84,48 +57,75 @@ a {
     display: flex;
     justify-content: space-between;
     align-content: center;
+    max-height: 105px;
 }
-// .logo-top {
-// }
+.logo-top {
+    margin-top: 10px;
+    max-width: 7rem;
+    img {
+        width: 100%;
+    }
+}
 .contact {
     text-align: left;
+    width: 235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    margin-top: -15px;
 }
 .tel {
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    span {
+        margin-top: 5px;
+    }
 }
 .email {
     color: #cd0003;
+    align-self: flex-end;
 }
-// .toggle-icon {
-// }
-// .bar {
-// }
 .menu {
     &__list {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         width: auto;
-
-        font-size: 23px;
     }
 
     &__list-item {
         margin-left: 20px;
     }
-
-    // &__list-link {
-    // }
 }
-// .list {
-//     &__podmenu {
-//     }
-// }
+.list {
+    &__podmenu {
+        &:hover .podmenu__list,
+        &:focus .podmenu__list {
+            display: block;
+        }
+    }
+}
 .podmenu {
     &__list {
         font-size: 18px;
+        display: none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.75);
+        min-width: 160px;
+        // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        margin-left: -14px;
+        a {
+            float: none;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
     }
-
-    // &__list-item {
-    // }
 }
+@import "../scss/adaptiv";
