@@ -227,11 +227,18 @@ a:hover {
   letter-spacing: 1px;
   font-size: 10px;
   line-height: 20px;
+  word-wrap: break-all;
 }
 
 .section__box-texte p {
   font-weight: 100;
   padding: 15px 0;
+}
+
+.section__box-texte span {
+  white-space: pre;
+  color: #cd0003;
+  line-height: 25px;
 }
 
 .section-color {
@@ -463,9 +470,27 @@ a:hover {
   }
 }
 
+@media screen and (min-width: 468px) {
+  .section__box-texte span {
+    margin-left: 72px;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .section__box-texte span {
+    margin-left: 20px;
+  }
+  p .section__box-texte-left {
+    margin-left: 72px;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .section__box-texte {
     line-height: 25px;
+  }
+  p .section__box-texte-left {
+    margin-left: 68px;
   }
 }
 
@@ -476,6 +501,8 @@ a:hover {
     width: 70%;
   }
   .section__title {
+    margin: 0 auto;
+    width: 80%;
     padding-top: 30px;
     font-size: 35px;
   }

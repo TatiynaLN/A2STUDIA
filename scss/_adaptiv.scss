@@ -98,11 +98,35 @@
         position: relative;
     }
 }
+@media screen and (min-width: 468px) {
+    .section {
+        &__box-texte {
+            span {
+                margin-left: 72px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 540px) {
+    .section {
+        &__box-texte {
+            span {
+                margin-left: 20px;
+            }
+        }
+    }
+    p .section__box-texte-left {
+        margin-left: 72px;
+    }
+}
 @media screen and (min-width: 600px) {
     .section {
         &__box-texte {
             line-height: 25px;
         }
+    }
+    p .section__box-texte-left {
+        margin-left: 68px;
     }
 }
 @media screen and (min-width: 1020px) {
@@ -114,6 +138,8 @@
         }
 
         &__title {
+            margin: 0 auto;
+            width: 80%;
             padding-top: 30px;
             font-size: 35px;
         }

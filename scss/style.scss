@@ -195,12 +195,20 @@ a {
         letter-spacing: 1px;
         font-size: 10px;
         line-height: 20px;
+        word-wrap: break-all;
         p {
             font-weight: 100;
             padding: 15px 0;
         }
+        span {
+            white-space: pre;
+            // margin-left: 72px;
+            color: #cd0003;
+            line-height: 25px;
+        }
     }
 }
+
 .section-color {
     background-color: #363636;
 }
