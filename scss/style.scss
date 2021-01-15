@@ -130,10 +130,11 @@ a {
 }
 
 /********SECTION**********/
-.section-one {
-    margin-top: -15px;
-}
+// .section-one {
+//     margin-top: -15px;
+// }
 .section {
+    margin-top: -15px;
     padding: 0 5px;
     border-top: solid 0.5px #fff;
     text-align: center;
@@ -194,5 +195,8 @@ a {
 .section-color {
     background-color: #363636;
 }
-
+.section-colors {
+    background-color: #666666;
+}
+@import "../scss/slider";
 @import "../scss/adaptiv";

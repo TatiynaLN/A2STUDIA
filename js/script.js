@@ -68,3 +68,43 @@ function addp() {
     }
     this.classList.add('active');
 }
+// SLICK SLIDER
+
+//слайдер 
+
+
+$(document).ready(function () {
+    $('.sliders').slick({
+        arrows: true,
+        autoplay: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        speed: 500,
+        infinite: true,
+        dots: false,
+
+        responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                }
+            },
+            {
+                breakpoint: 560,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                }
+            },
+        ]
+
+    });
+});
