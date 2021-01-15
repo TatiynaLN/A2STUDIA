@@ -79,3 +79,38 @@
         position: relative;
     }
 }
+@media screen and (min-width: 540px) {
+    .section {
+        &__box-text {
+            margin-bottom: -15px;
+        }
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .section {
+        padding: 30px 0;
+        &__container {
+            margin: 0 auto;
+            width: 70%;
+        }
+
+        &__title {
+            font-size: 35px;
+        }
+
+        &__box {
+            justify-content: space-between;
+        }
+
+        &__box-img {
+            width: 300px;
+            height: 165px;
+        }
+
+        &__box-text {
+            font-size: 20px;
+            margin-top: 30px;
+        }
+    }
+}
