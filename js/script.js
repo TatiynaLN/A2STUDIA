@@ -1,3 +1,37 @@
+$('.sliders').slick({
+    arrows: true,
+    autoplay: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    speed: 500,
+    infinite: true,
+    dots: false,
+    responsive: [
+        {
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            }
+        },
+        {
+            breakpoint: 560,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            }
+        },
+    ]
+
+});
+
+
 // jQuery.noConflict();
 // jQuery(window).load(function () {
 //     jQuery('#vt_nivo_slider106').nivoSlider({
@@ -82,35 +116,3 @@ function addp() {
 //         speed: 500,
 //         infinite: true,
 //         dots: false,
-$('.sliders').slick({
-    arrows: true,
-    autoplay: false,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    speed: 500,
-    infinite: true,
-    dots: false,
-    responsive: [
-        {
-            breakpoint: 900,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                arrows: false,
-                autoplay: true,
-                autoplaySpeed: 2000,
-            }
-        },
-        {
-            breakpoint: 560,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                arrows: false,
-                autoplay: true,
-                autoplaySpeed: 2000,
-            }
-        },
-    ]
-
-});
