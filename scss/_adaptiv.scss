@@ -98,7 +98,13 @@
         position: relative;
     }
 }
-
+@media screen and (min-width: 600px) {
+    .section {
+        &__box-texte {
+            line-height: 25px;
+        }
+    }
+}
 @media screen and (min-width: 1020px) {
     /*********SECTION***********/
     .section {
@@ -124,6 +130,12 @@
         &__box-text {
             font-size: 20px;
             margin: 30px 0;
+        }
+        &__box-texte {
+            font-size: 12px;
+            p {
+                padding: 20px 0;
+            }
         }
     }
 }

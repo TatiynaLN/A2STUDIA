@@ -1,6 +1,11 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Stem-Light";
+  src: local("Stem-Light"), url("/fonts/Stem-Light.woff2") format("woff2"), url("/fonts/Stem-Light.woff") format("woff"), url("/fonts/Stem-Light.ttf") format("ttf"), url("/fonts/Stem-Light.otf") format("otf");
+}
+
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Stem-light", sans-serif;
 }
 
 a {
@@ -144,11 +149,15 @@ a:hover {
 }
 
 /********SECTION**********/
-.section {
+.section-top {
   margin-top: -15px;
+}
+
+.section {
   padding: 0 5px;
   border-top: solid 0.5px #fff;
   text-align: center;
+  /*******ABOUT US*********/
 }
 
 .section__container {
@@ -211,6 +220,18 @@ a:hover {
 .section__box-text {
   margin: 15px 0;
   font-size: 15px;
+}
+
+.section__box-texte {
+  text-align: left;
+  letter-spacing: 1px;
+  font-size: 10px;
+  line-height: 20px;
+}
+
+.section__box-texte p {
+  font-weight: 100;
+  padding: 15px 0;
 }
 
 .section-color {
@@ -442,6 +463,12 @@ a:hover {
   }
 }
 
+@media screen and (min-width: 600px) {
+  .section__box-texte {
+    line-height: 25px;
+  }
+}
+
 @media screen and (min-width: 1020px) {
   /*********SECTION***********/
   .section__container {
@@ -464,5 +491,11 @@ a:hover {
   .section__box-text {
     font-size: 20px;
     margin: 30px 0;
+  }
+  .section__box-texte {
+    font-size: 12px;
+  }
+  .section__box-texte p {
+    padding: 20px 0;
   }
 }

@@ -1,13 +1,12 @@
-// @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
-// @font-face {
-//     //     font-family: "Noto Sans"";
-//     //     src: url(../font/Stem/Stem-Light.otf) format("otf");
-//     //     src: url(../font/Stem/Stem-Light.ttf) format("ttf");
-//     //     src: url(../font/Stem/Stem-Light.woff) format("woff");
-//     font-display: swap;
-// }
+@font-face {
+    font-family: "Stem-Light";
+    src: local("Stem-Light"), url("/fonts/Stem-Light.woff2") format("woff2"),
+        url("/fonts/Stem-Light.woff") format("woff"), url("/fonts/Stem-Light.ttf") format("ttf"),
+        url("/fonts/Stem-Light.otf") format("otf");
+}
 body {
-    font-family: "Noto Sans", sans-serif;
+    // font-family: "Noto Sans", sans-serif;
+    font-family: "Stem-light", sans-serif;
 }
 a {
     text-decoration: none;
@@ -130,11 +129,10 @@ a {
 }
 
 /********SECTION**********/
-// .section-one {
-//     margin-top: -15px;
-// }
-.section {
+.section-top {
     margin-top: -15px;
+}
+.section {
     padding: 0 5px;
     border-top: solid 0.5px #fff;
     text-align: center;
@@ -190,6 +188,17 @@ a {
     &__box-text {
         margin: 15px 0;
         font-size: 15px;
+    }
+    /*******ABOUT US*********/
+    &__box-texte {
+        text-align: left;
+        letter-spacing: 1px;
+        font-size: 10px;
+        line-height: 20px;
+        p {
+            font-weight: 100;
+            padding: 15px 0;
+        }
     }
 }
 .section-color {
