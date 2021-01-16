@@ -186,7 +186,7 @@ a:hover {
       align-content: center;
 }
 
-.section__boxs {
+.section__cont {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -687,7 +687,7 @@ a:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .section__boxs {
+  .section__cont {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
