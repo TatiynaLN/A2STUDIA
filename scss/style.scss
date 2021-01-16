@@ -17,7 +17,6 @@ a {
     padding: 0;
     &:hover {
         color: #cd0003;
-        font-weight: bold;
     }
 }
 .active {
@@ -27,14 +26,10 @@ a {
     position: absolute;
     width: 100%;
     height: auto;
-    background-color: rgb(0, 0, 0);
-    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
     font-size: 23px;
-}
-
-.active {
-    color: #cd0003;
+    font-weight: bold;
 }
 .container {
     color: #fff;
@@ -177,6 +172,9 @@ a {
         width: 260px;
         height: 140px;
         margin: 5px;
+        &:hover ~ a {
+            color: #cd0003;
+        }
         img {
             width: 100%;
             height: auto;
