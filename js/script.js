@@ -1,3 +1,4 @@
+// SLICK SLIDER
 $('.sliders').slick({
     arrows: true,
     autoplay: false,
