@@ -222,6 +222,10 @@ a:hover {
   background-color: #363636;
 }
 
+.section iframe {
+  border: none;
+}
+
 .section__boxs {
   margin: 0 auto;
 }

@@ -91,7 +91,7 @@ $(".toggle-icon").click(function () {
 
 // active menu
 
-var mn = document.getElementById('cllu');
+var mn = document.getElementById('cllu, cll');
 var i;
 for (i = 0; i < mn.children.length - 1; i++) {
     // mn.children[i].querySelector('a').classList.remove('active');
