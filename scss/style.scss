@@ -136,9 +136,41 @@ a {
         justify-content: space-between;
         align-content: center;
     }
+    /************** БЛОКИ С ВИДЕО ********/
+    &__boxs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    &__boxs-height {
+        width: 300px;
+        border: solid 0.5px #fff;
+        overflow: hidden;
+        margin: 10px;
+        .section__box-img {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .section__box-text {
+            margin: 0;
+        }
+        .section__box-texte {
+            margin: 5px;
+        }
+    }
+    &__boxs-top {
+        display: block;
+        margin-top: 0;
+        width: 100%;
+        padding: 20px 0;
+        background-color: #363636;
+    }
+    /***************/
     &__boxs {
         margin: 0 auto;
     }
+
     &__box-img {
         border: solid 0.5px #fff;
         overflow: hidden;
@@ -163,6 +195,10 @@ a {
                 -webkit-transition-duration: 0.5s;
                 -moz-transition-duration: 0.5s;
                 -o-transition-duration: 0.5s;
+            }
+            iframe {
+                width: 100%;
+                height: auto;
             }
         }
     }

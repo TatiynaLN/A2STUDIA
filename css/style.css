@@ -158,6 +158,8 @@ a:hover {
   padding: 0 5px;
   border-top: solid 0.5px #fff;
   text-align: center;
+  /************** БЛОКИ С ВИДЕО ********/
+  /***************/
   /*******ABOUT US*********/
 }
 
@@ -182,6 +184,47 @@ a:hover {
           justify-content: space-between;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+.section__boxs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.section__boxs-height {
+  width: 300px;
+  border: solid 0.5px #fff;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.section__boxs-height .section__box-img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section__boxs-height .section__box-text {
+  margin: 0;
+}
+
+.section__boxs-height .section__box-texte {
+  margin: 5px;
+}
+
+.section__boxs-top {
+  display: block;
+  margin-top: 0;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #363636;
 }
 
 .section__boxs {
@@ -216,6 +259,11 @@ a:hover {
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
+}
+
+.section__box-img img iframe {
+  width: 100%;
+  height: auto;
 }
 
 .section__box-text {
@@ -635,6 +683,11 @@ a:hover {
     font-size: 35px;
   }
   .section__box {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .section__boxs {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
