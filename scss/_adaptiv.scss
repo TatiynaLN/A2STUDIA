@@ -125,7 +125,7 @@
             line-height: 25px;
         }
         &__box-textes {
-            width: 574px;
+            width: 524px;
             p {
                 display: flex;
                 justify-content: space-between;
@@ -203,6 +203,7 @@
     .footer {
         &__containers {
             justify-content: space-around;
+            flex-direction: row;
         }
         &__bottom {
             justify-content: space-between;
@@ -225,6 +226,10 @@
             li {
                 padding: 10px;
             }
+        }
+        &__logo {
+            margin: 0;
+            align-self: flex-end;
         }
     }
 }

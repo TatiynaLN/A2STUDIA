@@ -28,7 +28,7 @@ div.nivo-html-caption {
 }
 ul,
 li {
-	color: lavender;
+	color: #fff;
 }
 /***************/
 .nivoslider {
@@ -149,4 +149,9 @@ li {
 	margin: 10px;
 	border-radius: 50%;
 	background-color: #fff;
+}
+@media screen and (max-width: 900px) {
+	.nivo-control {
+		padding: 8px;
+	}
 }

@@ -104,18 +104,7 @@ function addp() {
     this.classList.add('active');
 }
 // footer menu
-var mn = document.getElementById('cll');
-var i;
-for (i = 0; i < mn.children.length - 1; i++) {
-    // mn.children[i].querySelector('a').classList.remove('active');
-    mn.children[i].querySelector('a').onclick = addp;
-}
-function addp() {
-    for (i = 0; i < mn.children.length - 1; i++) {
-        mn.children[i].querySelector('a').classList.remove('active');
-    }
-    this.classList.add('active');
-}
+
 // SLICK SLIDER
 
 //слайдер 
