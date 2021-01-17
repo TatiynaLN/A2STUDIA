@@ -668,12 +668,6 @@ li {
 }
 
 @media screen and (max-width: 720px) {
-  .podmenu__list {
-    margin-left: -14px;
-  }
-  .podmenu__list a {
-    padding: 0;
-  }
   .top-container {
     width: 99%;
   }
