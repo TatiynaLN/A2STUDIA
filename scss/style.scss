@@ -186,6 +186,7 @@ li {
         border: solid 0.5px #fff;
         overflow: hidden;
         margin: 10px;
+        background-color: #666;
         .section__box-img {
             width: 100%;
             margin: 0 auto;
@@ -195,6 +196,9 @@ li {
         }
         .section__box-texte {
             margin: 5px;
+        }
+        &__boxs-center {
+            justify-self: center;
         }
     }
     &__boxs-top {

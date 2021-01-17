@@ -175,6 +175,11 @@
         }
         &__cont {
             justify-content: space-between;
+            padding: 20px 0;
+        }
+        .section__boxs-center {
+            margin: 0 auto;
+            margin-top: 10px;
         }
         &__box-img {
             width: 300px;

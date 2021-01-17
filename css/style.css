@@ -271,6 +271,7 @@ li {
   border: solid 0.5px #fff;
   overflow: hidden;
   margin: 10px;
+  background-color: #666;
 }
 
 .section__boxs-height .section__box-img {
@@ -284,6 +285,11 @@ li {
 
 .section__boxs-height .section__box-texte {
   margin: 5px;
+}
+
+.section__boxs-height__boxs-center {
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .section__boxs-top {
@@ -780,6 +786,11 @@ li {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 20px 0;
+  }
+  .section .section__boxs-center {
+    margin: 0 auto;
+    margin-top: 10px;
   }
   .section__box-img {
     width: 300px;
