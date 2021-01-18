@@ -237,3 +237,82 @@ $(document).ready(function () {
         mobileFirst: true
     });
 });
+$(document).ready(function () {
+    $('.kamazmin').slick({
+        arrows: false,
+        dots: false,
+        adaptiveHeight: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        speed: 500,
+        easing: 'ease',
+        infinite: true,
+        initialSlide: 0,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        pauseOnFocus: true,
+        pauseOnHover: true,
+        draggable: false,
+        swipe: true,
+        touchThreshold: 10,
+        touchMove: true,
+        waitForAnimate: false,
+        centerMode: false,
+        variableWidth: false,
+        rows: 1,
+        slidesPerRow: 1,
+        vertical: false,
+        verticalSwiping: false,
+        asNavFor: ".kamaz",
+
+        responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    autoplay: false,
+                    slidesToShow: 5,
+                }
+            }
+        ],
+        mobileFirst: true
+    });
+});
+
+$(document).ready(function () {
+    $('.similar').slick({
+        arrows: true,
+        dots: false,
+        adaptiveHeight: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        speed: 500,
+        easing: 'ease',
+        infinite: true,
+        // initialSlide: 0,
+        // autoplay: true,
+        autoplaySpeed: 1500,
+        // pauseOnFocus: true,
+        // pauseOnHover: true,
+        draggable: true,//не перетаскивается
+        swipe: true,
+        touchThreshold: 10,
+        touchMove: true,
+        waitForAnimate: false,
+        centerMode: false,
+        variableWidth: false,
+        rows: 1,
+        slidesPerRow: 1,
+        vertical: false,
+        verticalSwiping: false,
+        responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    autoplay: false,
+                    slidesToShow: 4,
+                }
+            }
+        ],
+        mobileFirst: true
+    });
+});

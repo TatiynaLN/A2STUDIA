@@ -91,13 +91,12 @@
     }
 }
 @media screen and (min-width: 468px) {
-    // .section {
-    //     &__box-texte {
-    //         span {
-    //             margin-left: 72px;
-    //         }
-    //     }
-    // }
+    /*******MODELING********/
+    .section {
+        .section__conts-img {
+            height: 169px;
+        }
+    }
 }
 @media screen and (min-width: 540px) {
     .section {
