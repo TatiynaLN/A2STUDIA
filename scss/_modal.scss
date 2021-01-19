@@ -20,6 +20,8 @@
     cursor: pointer;
     transition: 0.3s ease;
     overflow: hidden;
+    pointer-events: none; /* делаем ссылку некликабельной */
+    cursor: default; /* устанавливаем курсор в виде стрелки */
     img {
         width: 100%;
     }
@@ -68,6 +70,14 @@
     }
     .section .modal__top-text {
         margin-bottom: 15px;
+    }
+    .btn {
+        cursor: pointer;
+        pointer-events: painted; /* делаем ссылку кликабельной */
+
+        img {
+            width: 100%;
+        }
     }
 }
 

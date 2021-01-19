@@ -621,6 +621,10 @@ li {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   overflow: hidden;
+  pointer-events: none;
+  /* делаем ссылку некликабельной */
+  cursor: default;
+  /* устанавливаем курсор в виде стрелки */
 }
 
 .btn img {
@@ -681,6 +685,14 @@ li {
   }
   .section .modal__top-text {
     margin-bottom: 15px;
+  }
+  .btn {
+    cursor: pointer;
+    pointer-events: painted;
+    /* делаем ссылку кликабельной */
+  }
+  .btn img {
+    width: 100%;
   }
 }
 
