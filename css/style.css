@@ -1188,13 +1188,6 @@ li {
   }
   /*******стрелки слайда  главная страница********/
   .aboutus .slick-arrow {
-    top: 85%;
-  }
-}
-
-@media screen and (min-width: 1360px) {
-  /*******стрелки слайда  главная страница********/
-  .aboutus .slick-arrow {
     top: 70%;
   }
 }
