@@ -642,9 +642,10 @@ li {
   z-index: 2;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
   .modal__box {
     width: 90%;
+    width: 75%;
     padding: 1em;
     background: #fff;
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
@@ -657,6 +658,7 @@ li {
   }
   .modal__box img {
     width: 100%;
+    height: 100%;
   }
   /* modal magic */
   .btn:focus + .modal {
