@@ -587,6 +587,16 @@ li {
 }
 
 /********************/
+/*********отступы в секции с маленьким слайдером ПОХОЖИЕ РАБОТЫ**********/
+.modeling__title {
+  padding-bottom: 15px;
+}
+
+.modeling {
+  padding-bottom: 15px;
+}
+
+/****************/
 /********* MODAL **********/
 .modal__top-text {
   margin-bottom: 15px;
@@ -900,8 +910,6 @@ li {
 /***********similar*************/
 .similar {
   margin: 0 auto;
-  padding-top: 30px;
-  padding-bottom: 60px;
   position: relative;
   max-width: 85%;
   /* Стрелка */
