@@ -913,7 +913,7 @@ li {
 
 .aboutus .slick-arrow {
   position: absolute;
-  top: 80%;
+  top: 90%;
   margin: -30px 0px 0px 0px;
   z-index: 1;
   font-size: 0;
@@ -1024,6 +1024,13 @@ li {
   }
 }
 
+@media screen and (min-width: 411px) {
+  /*******стрелки слайда  главная страница********/
+  .aboutus .slick-arrow {
+    top: 80%;
+  }
+}
+
 @media screen and (min-width: 468px) {
   /*******MODELING********/
   .section .section__conts-img {
@@ -1082,6 +1089,10 @@ li {
   .footer__text {
     margin-top: 0;
     line-height: 35px;
+  }
+  /*******стрелки слайда  главная страница********/
+  .aboutus .slick-arrow {
+    top: 70%;
   }
 }
 
@@ -1174,5 +1185,9 @@ li {
     margin: 0;
     -ms-flex-item-align: end;
         align-self: flex-end;
+  }
+  /*******стрелки слайда  главная страница********/
+  .aboutus .slick-arrow {
+    top: 85%;
   }
 }

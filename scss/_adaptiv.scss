@@ -90,6 +90,14 @@
         position: relative;
     }
 }
+@media screen and (min-width: 411px) {
+    /*******стрелки слайда  главная страница********/
+    .aboutus {
+        .slick-arrow {
+            top: 80%;
+        }
+    }
+}
 @media screen and (min-width: 468px) {
     /*******MODELING********/
     .section {
@@ -144,6 +152,13 @@
         &__text {
             margin-top: 0;
             line-height: 35px;
+        }
+    }
+
+    /*******стрелки слайда  главная страница********/
+    .aboutus {
+        .slick-arrow {
+            top: 70%;
         }
     }
 }
@@ -226,6 +241,12 @@
         &__logo {
             margin: 0;
             align-self: flex-end;
+        }
+    }
+    /*******стрелки слайда  главная страница********/
+    .aboutus {
+        .slick-arrow {
+            top: 85%;
         }
     }
 }
