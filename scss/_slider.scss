@@ -227,14 +227,14 @@
         position: absolute;
         top: 40%;
         margin: -30px 0px 0px 0px;
-        z-index: 10;
+        z-index: 1;
         font-size: 0;
-        width: 40px;
-        height: 80px;
+        width: 30px;
+        height: 50px;
     }
     /* Стрелка влево */
     .slick-arrow.slick-prev {
-        left: -30px;
+        left: -5px;
         background: url("../img/arrow-left-min2.png") 0 0 / 40% no-repeat;
         outline: none;
         cursor: pointer;
@@ -246,7 +246,7 @@
     }
     /* Стрелка вправо */
     .slick-arrow.slick-next {
-        right: -50px;
+        right: -25px;
         background: url("../img/arrow-right-min2.png") 0 0 / 40% no-repeat;
         outline: none;
         cursor: pointer;
