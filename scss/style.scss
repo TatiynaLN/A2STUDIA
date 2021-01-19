@@ -157,7 +157,8 @@ li {
 }
 /********SECTION**********/
 .section-top {
-    margin-top: -15px;
+    // margin-top: -6px;
+    margin: 0;
 }
 .section {
     padding: 0 5px;
@@ -171,7 +172,6 @@ li {
         font-size: 25px;
     }
     &__box {
-        margin: 10px 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -420,12 +420,9 @@ li {
 .conts {
     padding: 30px;
 }
-.section-tops {
-    margin-top: -20px;
-}
 /*********ОТСТУП ТЕКСТА ПОД БОЛЬШИМ СЛАЙДЕРОМ***********/
 .text__bottom {
-    margin-bottom: 15px;
+    padding-bottom: 15px;
 }
 /********************/
 @import "../scss/slider";

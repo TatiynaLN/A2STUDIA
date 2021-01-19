@@ -210,6 +210,9 @@
             overflow: hidden;
             outline: none;
             margin-bottom: 10px;
+            &:hover + a {
+                color: #cd0003;
+            }
         }
         img {
             width: 100%;

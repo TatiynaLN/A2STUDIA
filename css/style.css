@@ -214,7 +214,7 @@ li {
 
 /********SECTION**********/
 .section-top {
-  margin-top: -15px;
+  margin: 0;
 }
 
 .section {
@@ -233,7 +233,6 @@ li {
 }
 
 .section__box {
-  margin: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -582,13 +581,9 @@ li {
   padding: 30px;
 }
 
-.section-tops {
-  margin-top: -20px;
-}
-
 /*********ОТСТУП ТЕКСТА ПОД БОЛЬШИМ СЛАЙДЕРОМ***********/
 .text__bottom {
-  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 /********************/
@@ -840,6 +835,10 @@ li {
   overflow: hidden;
   outline: none;
   margin-bottom: 10px;
+}
+
+.similar .slide__item a:hover + a {
+  color: #cd0003;
 }
 
 .similar .slide__item img {
