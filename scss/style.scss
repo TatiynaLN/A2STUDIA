@@ -423,6 +423,10 @@ li {
 .section-tops {
     margin-top: -20px;
 }
+/*********ОТСТУП ТЕКСТА ПОД БОЛЬШИМ СЛАЙДЕРОМ***********/
+.text__bottom {
+    margin-bottom: 15px;
+}
 /********************/
 @import "../scss/slider";
 @import "../scss/adaptiv";
