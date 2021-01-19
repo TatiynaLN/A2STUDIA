@@ -409,13 +409,12 @@ li {
             }
         }
     }
-
+    .bottom {
+        order: 2;
+        margin: 15px;
+    }
     &__conts-text {
         order: 0;
-    }
-    p {
-        order: 2;
-        margin: 20px 0;
     }
 }
 .conts {
