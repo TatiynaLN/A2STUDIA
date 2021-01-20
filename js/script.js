@@ -70,22 +70,9 @@ function addp() {
     }
     this.classList.add('active');
 }
-// footer menu
+
 
 // SLICK SLIDER
-
-//слайдер 
-
-
-// $(document).ready(function () {
-//     $('.sliders').slick({
-//         arrows: true,
-//         autoplay: false,
-//         slidesToShow: 4,
-//         slidesToScroll: 1,
-//         speed: 500,
-//         infinite: true,
-//         dots: false,
 // SLICK SLIDER MODELING
 $(document).ready(function () {
     $('.uralmin').slick({
@@ -144,105 +131,6 @@ $(document).ready(function () {
         mobileFirst: true
     });
 });
-// //kamaz
-// $(document).ready(function () {
-//     $('.kamazmin').slick({
-//         arrows: false,
-//         dots: false,
-//         adaptiveHeight: false,
-//         slidesToShow: 3,
-//         slidesToScroll: 1,
-//         speed: 500,
-//         easing: 'ease',
-//         infinite: true,
-//         initialSlide: 0,
-//         autoplay: true,
-//         autoplaySpeed: 1500,
-//         pauseOnFocus: true,
-//         pauseOnHover: true,
-//         draggable: false,
-//         swipe: true,
-//         touchThreshold: 10,
-//         touchMove: true,
-//         waitForAnimate: false,
-//         centerMode: false,
-//         variableWidth: false,
-//         rows: 1,
-//         slidesPerRow: 1,
-//         vertical: false,
-//         verticalSwiping: false,
-//         asNavFor: ".kamaz",
-
-//         responsive: [
-//             {
-//                 breakpoint: 900,
-//                 settings: {
-//                     autoplay: false,
-//                     slidesToShow: 5,
-//                 }
-//             }
-//         ],
-//         mobileFirst: true
-//     });
-//     $('.kamaz').slick({
-//         arrows: false,
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         speed: 500,
-//         fade: true,
-//         asNavFor: ".kamazmin",
-//         responsive: [
-//             {
-//                 breakpoint: 900,
-//                 settings: {
-//                     arrows: true,
-//                 }
-//             }
-//         ],
-//         mobileFirst: true
-//     });
-// });
-// $(document).ready(function () {
-//     $('.kamazmin').slick({
-//         arrows: false,
-//         dots: false,
-//         adaptiveHeight: false,
-//         slidesToShow: 3,
-//         slidesToScroll: 1,
-//         speed: 500,
-//         easing: 'ease',
-//         infinite: true,
-//         initialSlide: 0,
-//         autoplay: true,
-//         autoplaySpeed: 1500,
-//         pauseOnFocus: true,
-//         pauseOnHover: true,
-//         draggable: false,
-//         swipe: true,
-//         touchThreshold: 10,
-//         touchMove: true,
-//         waitForAnimate: false,
-//         centerMode: false,
-//         variableWidth: false,
-//         rows: 1,
-//         slidesPerRow: 1,
-//         vertical: false,
-//         verticalSwiping: false,
-//         asNavFor: ".kamaz",
-
-//         responsive: [
-//             {
-//                 breakpoint: 900,
-//                 settings: {
-//                     autoplay: false,
-//                     slidesToShow: 5,
-//                 }
-//             }
-//         ],
-//         mobileFirst: true
-//     });
-// });
-
 $(document).ready(function () {
     $('.similar').slick({
         arrows: true,

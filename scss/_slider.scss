@@ -1,8 +1,3 @@
-// .wrapper {
-//     width: 60%;
-//     margin: 0 auto;
-//     padding: 50px 0;
-// }
 .slider__item {
     display: flex;
     -ms-flex-item-align: stretch;
@@ -15,13 +10,10 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     width: 100%;
-    border: 1px solid rgba(208, 206, 206, 0.5);
     margin: 0 50px;
 }
-// .slider__item:hover {
-//     box-shadow: 0 0 17.5px rgba(0, 0, 0, 0.15);
-// }
-// /* Ограничивающая оболочка */
+
+/* Ограничивающая оболочка */
 .slick-list {
     overflow: hidden;
     width: auto;
@@ -34,64 +26,6 @@
     display: flex;
 }
 
-// .sliders {
-//     display: -webkit-box;
-//     display: -ms-flexbox;
-//     display: flex;
-//     -webkit-box-pack: center;
-//     -ms-flex-pack: center;
-//     justify-content: center;
-//     cursor: pointer;
-// }
-
-// .sliders .slick-arrow {
-//     position: absolute;
-//     z-index: 10;
-//     font-size: 0;
-//     width: 48px;
-//     height: 48px;
-//     margin-top: 19px;
-// }
-
-// /* Стрелка влево */
-// .sliders .slick-arrow.slick-prev {
-//     left: 17%;
-//     background: url("../img/arrow-left-min2.png") 0 0 / 40% no-repeat;
-//     outline: none;
-//     cursor: pointer;
-//     border: none;
-// }
-// .sliders .slick-arrow.slick-prev:hover {
-//     content: "";
-//     background: url("../img/arrow-left-min1.png") 0 0 / 40% no-repeat;
-// }
-// /* Стрелка вправо */
-// .sliders .slick-arrow.slick-next {
-//     right: 16%;
-//     background: url("../img/arrow-right-min2.png") 0 0 / 40% no-repeat;
-//     outline: none;
-//     cursor: pointer;
-//     border: none;
-// }
-// .sliders .slick-arrow.slick-next:hover {
-//     content: "";
-//     background: url("../img/arrow-right-min1.png") 0 0 / 40% no-repeat;
-// }
-
-// .slider-content {
-//     display: flex;
-// }
-
-// .slider__img-box {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     outline: none;
-// }
-// .slider-img {
-//     width: 100%;
-//     height: auto;
-// }
 /********* MODELING **************/
 .slide__item {
     cursor: pointer;
@@ -169,7 +103,7 @@
             margin: 0 auto;
             width: 90%;
             height: auto;
-            border: solid 0.5px #fff;
+            border: solid 1px #fff;
             z-index: 0;
         }
     }
@@ -212,7 +146,7 @@
         img {
             width: 100%;
             height: auto;
-            border: solid 0.5px #fff;
+            border: solid 1px #fff;
             z-index: 0;
             outline: none;
         }
@@ -272,55 +206,4 @@
         width: 30px;
         height: 50px;
     }
-}
-.proba {
-    margin: 0 auto;
-    padding-top: 30px;
-    position: relative;
-    max-width: 85%;
-    // max-height: 137px;
-    .slide__item {
-        width: 80%;
-        // max-height: 105px;
-        outline: none;
-        text-align: center;
-        overflow: hidden;
-        img {
-            margin: 0 auto;
-            width: 90%;
-            height: auto;
-            border: solid 0.5px #fff;
-            z-index: 0;
-        }
-    }
-    .slick-active img {
-        display: block;
-        transform: scale(1);
-        opacity: 1;
-        background: none;
-        transition: 0.5s ease;
-    }
-
-    .slick-active + .slick-active img {
-        transform: scale(1);
-
-        background: #222;
-        opacity: 0.3;
-    }
-    .slick-dots {
-        text-align: center;
-        display: flex; // поставить кнопки в ряд
-        justify-content: center; // выровнять по центру
-        list-style: none; // убираем черные маркеры
-    }
-    // .slick-dots button {
-    //     background: url("../img/modeling/ka27/min/ka-27_00.jpg"), url("../img/modeling/ka27/min/ka-27_01.jpg"),
-    //         url("../img/modeling/ka27/min/ka-27_02.jpg");
-    //     border: none; // без рамки
-
-    //     height: 305px; // высота точки
-    //     width: 105px; // ширина точки
-    //     margin: 5px; // отступы между точками
-    //     outline: none; // убираем обводку
-    // }
 }
