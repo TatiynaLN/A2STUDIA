@@ -1200,3 +1200,17 @@ li {
     top: 75%;
   }
 }
+
+a.b {
+  background: url("../img/anime.jpg") 40%;
+  /* Путь к файлу с исходным рисунком  */
+  display: block;
+  /*  Рисунок как блочный элемент */
+  width: 480px;
+  height: 270px;
+}
+
+a.b:hover {
+  background: url("../img/rukalama.jpg");
+  /* Путь к файлу с заменяемым рисунком  */
+}
