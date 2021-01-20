@@ -923,6 +923,56 @@ li {
   height: 50px;
 }
 
+.proba {
+  margin: 0 auto;
+  padding-top: 30px;
+  position: relative;
+  max-width: 85%;
+}
+
+.proba .slide__item {
+  width: 80%;
+  outline: none;
+  text-align: center;
+  overflow: hidden;
+}
+
+.proba .slide__item img {
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  border: solid 0.5px #fff;
+  z-index: 0;
+}
+
+.proba .slick-active img {
+  display: block;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  background: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.proba .slick-active + .slick-active img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background: #222;
+  opacity: 0.3;
+}
+
+.proba .slick-dots {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
 @media screen and (max-width: 1200px) {
   .wrapper {
     width: 90%;
@@ -1199,18 +1249,4 @@ li {
   .client .slick-arrow {
     top: 75%;
   }
-}
-
-a.b {
-  background: url("../img/anime.jpg") 40%;
-  /* Путь к файлу с исходным рисунком  */
-  display: block;
-  /*  Рисунок как блочный элемент */
-  width: 480px;
-  height: 270px;
-}
-
-a.b:hover {
-  background: url("../img/rukalama.jpg");
-  /* Путь к файлу с заменяемым рисунком  */
 }

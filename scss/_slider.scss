@@ -273,3 +273,54 @@
         height: 50px;
     }
 }
+.proba {
+    margin: 0 auto;
+    padding-top: 30px;
+    position: relative;
+    max-width: 85%;
+    // max-height: 137px;
+    .slide__item {
+        width: 80%;
+        // max-height: 105px;
+        outline: none;
+        text-align: center;
+        overflow: hidden;
+        img {
+            margin: 0 auto;
+            width: 90%;
+            height: auto;
+            border: solid 0.5px #fff;
+            z-index: 0;
+        }
+    }
+    .slick-active img {
+        display: block;
+        transform: scale(1);
+        opacity: 1;
+        background: none;
+        transition: 0.5s ease;
+    }
+
+    .slick-active + .slick-active img {
+        transform: scale(1);
+
+        background: #222;
+        opacity: 0.3;
+    }
+    .slick-dots {
+        text-align: center;
+        display: flex; // поставить кнопки в ряд
+        justify-content: center; // выровнять по центру
+        list-style: none; // убираем черные маркеры
+    }
+    // .slick-dots button {
+    //     background: url("../img/modeling/ka27/min/ka-27_00.jpg"), url("../img/modeling/ka27/min/ka-27_01.jpg"),
+    //         url("../img/modeling/ka27/min/ka-27_02.jpg");
+    //     border: none; // без рамки
+
+    //     height: 305px; // высота точки
+    //     width: 105px; // ширина точки
+    //     margin: 5px; // отступы между точками
+    //     outline: none; // убираем обводку
+    // }
+}
