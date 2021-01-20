@@ -154,26 +154,18 @@ li {
 @-webkit-keyframes podmenu__list {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(150px) rotate(-90deg);
-            transform: translateX(150px) rotate(-90deg);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(0) rotate(0);
-            transform: translateX(0) rotate(0);
   }
 }
 
 @keyframes podmenu__list {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(150px) rotate(-90deg);
-            transform: translateX(150px) rotate(-90deg);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(0) rotate(0);
-            transform: translateX(0) rotate(0);
   }
 }
 
@@ -910,20 +902,20 @@ li {
   background: url("../img/arrow-right-min1.png") 0 0/40% no-repeat;
 }
 
-.aboutus {
+.client {
   /* Стрелка */
 }
 
-.aboutus .slide__item img {
+.client .slide__item img {
   width: 90%;
   border: none;
 }
 
-.aboutus__cont {
+.client__cont {
   padding-bottom: 15px;
 }
 
-.aboutus .slick-arrow {
+.client .slick-arrow {
   position: absolute;
   top: 90%;
   margin: -30px 0px 0px 0px;
@@ -1038,7 +1030,7 @@ li {
 
 @media screen and (min-width: 411px) {
   /*******стрелки слайда  главная страница********/
-  .aboutus .slick-arrow {
+  .client .slick-arrow {
     top: 80%;
   }
 }
@@ -1103,7 +1095,7 @@ li {
     line-height: 35px;
   }
   /*******стрелки слайда  главная страница********/
-  .aboutus .slick-arrow {
+  .client .slick-arrow {
     top: 70%;
   }
 }
@@ -1199,14 +1191,14 @@ li {
         align-self: flex-end;
   }
   /*******стрелки слайда  главная страница********/
-  .aboutus .slick-arrow {
+  .client .slick-arrow {
     top: 85%;
   }
 }
 
 @media screen and (min-width: 1360px) {
   /*******стрелки слайда  главная страница********/
-  .aboutus .slick-arrow {
+  .client .slick-arrow {
     top: 75%;
   }
 }
