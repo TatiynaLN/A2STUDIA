@@ -205,6 +205,10 @@ li {
 }
 
 /********SECTION**********/
+.section__container {
+  overflow: hidden;
+}
+
 .section-top {
   margin: 0;
 }
@@ -698,10 +702,11 @@ li {
 /***********     TABS     *************/
 .prices {
   position: relative;
+  width: 100%;
 }
 
 .prices__block-mobail {
-  width: 100%;
+  width: 99%;
   border: solid 0.5px #fff;
   overflow: hidden;
 }

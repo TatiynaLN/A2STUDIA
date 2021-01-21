@@ -1,8 +1,9 @@
 /***********     TABS     *************/
 .prices {
     position: relative;
+    width: 100%;
     &__block-mobail {
-        width: 100%;
+        width: 99%;
         border: solid 0.5px #fff;
         overflow: hidden;
     }
