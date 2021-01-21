@@ -743,7 +743,6 @@ li {
 .prices__box-img {
   min-width: 100px;
   overflow: hidden;
-  margin-top: 5px;
 }
 
 .prices__box-img img {
