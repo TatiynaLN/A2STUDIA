@@ -170,8 +170,20 @@
         &__block-title {
             padding: 15px 0;
         }
-        h6:nth-child(4) {
+        h6:nth-child(1) {
             flex: 1;
+            padding: 0 5px;
+        }
+        h6:nth-child(2) {
+            flex: 1;
+            padding: 0 5px;
+        }
+        h6:nth-child(3) {
+            flex: 1.4;
+            padding: 0 5px;
+        }
+        h6:nth-child(4) {
+            flex: 1.8;
             padding: 0 5px;
         }
 
@@ -182,11 +194,79 @@
             .desktop-none {
                 display: none;
             }
-
-            p:nth-child(4) {
+            p:nth-child(1) {
                 flex: 1;
                 padding: 0 5px;
             }
+            p:nth-child(2) {
+                flex: 1;
+                padding: 0 5px;
+            }
+            p:nth-child(3) {
+                flex: 1.4;
+                padding: 0 5px;
+            }
+            p:nth-child(4) {
+                flex: 1.8;
+                padding: 0 5px;
+            }
+        }
+    }
+    .pricesreadmore {
+        &-title {
+            display: block;
+            padding: 10px 5px;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            text-align: center;
+        }
+        h6:nth-child(1) {
+            flex: 1;
+            padding: 0 5px;
+        }
+        h6:nth-child(2) {
+            flex: 1;
+        }
+        h6:nth-child(3) {
+            flex: 1.5;
+            padding: 0 5px;
+        }
+        h6:nth-child(4) {
+            flex: 2.5;
+            padding-right: 5px;
+        }
+        &__mobail-none {
+            display: block;
+        }
+        .mobail-img {
+            display: none;
+        }
+        p:nth-child(1) {
+            flex: 1;
+            padding-left: 5px;
+        }
+        p:nth-child(2) {
+            flex: 1;
+            padding: 0 5px;
+            text-align: center;
+        }
+        p:nth-child(3) {
+            flex: 1.5;
+        }
+        p:nth-child(4) {
+            flex: 2.5;
+            padding: 5px 5px;
+        }
+        &__box {
+            flex-direction: row;
+            padding: 0 5px;
+            p {
+                align-self: center;
+            }
+        }
+        &__box-img {
+            display: block;
         }
     }
 }

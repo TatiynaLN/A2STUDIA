@@ -1,13 +1,9 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Stem-light";
-  src: local("Stem-Light"), url("../fonts/Stem-Light.ttf") format("ttf"), url("../fonts/Stem-Light.otf") format("otf");
-}
-
-@font-face {
-  font-family: "Stem-light";
-  src: local("Stem-Light"), url("../fonts/Stem-Light.woff2") format("woff2"), url("../fonts/Stem-Light.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/Stem-light.eot");
+  src: url("../fonts/Stem-light.eot") format("eot"), url("../fonts/Stem-light.woff") format("woff"), url("../fonts/Stem-light.ttf") format("truetype"), url("../fonts/Stem-light.woff2") format("woff2");
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -718,8 +714,7 @@ li {
 }
 
 .prices__box p {
-  -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: flex-start;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -731,6 +726,112 @@ li {
 }
 
 .prices__box-img img {
+  width: 100%;
+  height: 100%;
+}
+
+/************************/
+.pricesreadmore__block {
+  width: 99%;
+  border: solid 0.5px #fff;
+}
+
+.pricesreadmore-title {
+  display: none;
+}
+
+.pricesreadmore__block-title {
+  border-bottom: solid 0.5px #fff;
+  padding: 10px 0;
+}
+
+.pricesreadmore__block-titles {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.pricesreadmore__color-dark {
+  background-color: #363636;
+}
+
+.pricesreadmore__color-light {
+  background-color: #666;
+}
+
+.pricesreadmore__mobail-none {
+  display: none;
+}
+
+.pricesreadmore .mobail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.pricesreadmore .mobail-img {
+  overflow: hidden;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.pricesreadmore .mobail-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.pricesreadmore div:nth-child(1) {
+  -webkit-box-flex: 1.4;
+      -ms-flex: 1.4;
+          flex: 1.4;
+}
+
+.pricesreadmore div:nth-child(2) {
+  -webkit-box-flex: 0.9;
+      -ms-flex: 0.9;
+          flex: 0.9;
+}
+
+.pricesreadmore__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: left;
+  padding: 10px 0 10px 5px;
+}
+
+.pricesreadmore__box .white-spice {
+  white-space: pre-line;
+}
+
+.pricesreadmore__box p {
+  line-height: 20px;
+}
+
+.pricesreadmore__box-img {
+  overflow: hidden;
+  display: none;
+  /*прячем на маленьких экранах*/
+}
+
+.pricesreadmore__box-img img {
   width: 100%;
   height: 100%;
 }
@@ -1255,10 +1356,28 @@ li {
   .prices__block-title {
     padding: 15px 0;
   }
-  .prices h6:nth-child(4) {
+  .prices h6:nth-child(1) {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    padding: 0 5px;
+  }
+  .prices h6:nth-child(2) {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 0 5px;
+  }
+  .prices h6:nth-child(3) {
+    -webkit-box-flex: 1.4;
+        -ms-flex: 1.4;
+            flex: 1.4;
+    padding: 0 5px;
+  }
+  .prices h6:nth-child(4) {
+    -webkit-box-flex: 1.8;
+        -ms-flex: 1.8;
+            flex: 1.8;
     padding: 0 5px;
   }
   .prices__mobail-none {
@@ -1267,11 +1386,110 @@ li {
   .prices__box .desktop-none {
     display: none;
   }
-  .prices__box p:nth-child(4) {
+  .prices__box p:nth-child(1) {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     padding: 0 5px;
+  }
+  .prices__box p:nth-child(2) {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 0 5px;
+  }
+  .prices__box p:nth-child(3) {
+    -webkit-box-flex: 1.4;
+        -ms-flex: 1.4;
+            flex: 1.4;
+    padding: 0 5px;
+  }
+  .prices__box p:nth-child(4) {
+    -webkit-box-flex: 1.8;
+        -ms-flex: 1.8;
+            flex: 1.8;
+    padding: 0 5px;
+  }
+  .pricesreadmore-title {
+    display: block;
+    padding: 10px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
+  }
+  .pricesreadmore h6:nth-child(1) {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 0 5px;
+  }
+  .pricesreadmore h6:nth-child(2) {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .pricesreadmore h6:nth-child(3) {
+    -webkit-box-flex: 1.5;
+        -ms-flex: 1.5;
+            flex: 1.5;
+    padding: 0 5px;
+  }
+  .pricesreadmore h6:nth-child(4) {
+    -webkit-box-flex: 2.5;
+        -ms-flex: 2.5;
+            flex: 2.5;
+    padding-right: 5px;
+  }
+  .pricesreadmore__mobail-none {
+    display: block;
+  }
+  .pricesreadmore .mobail-img {
+    display: none;
+  }
+  .pricesreadmore p:nth-child(1) {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding-left: 5px;
+  }
+  .pricesreadmore p:nth-child(2) {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 0 5px;
+    text-align: center;
+  }
+  .pricesreadmore p:nth-child(3) {
+    -webkit-box-flex: 1.5;
+        -ms-flex: 1.5;
+            flex: 1.5;
+  }
+  .pricesreadmore p:nth-child(4) {
+    -webkit-box-flex: 2.5;
+        -ms-flex: 2.5;
+            flex: 2.5;
+    padding: 5px 5px;
+  }
+  .pricesreadmore__box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0 5px;
+  }
+  .pricesreadmore__box p {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .pricesreadmore__box-img {
+    display: block;
   }
 }
 
