@@ -11,7 +11,7 @@
         overflow: hidden;
     }
     &__block-titles {
-        padding-top: 5px;
+        padding: 15px 0;
     }
 
     &__block-tabs {
@@ -35,11 +35,12 @@
             width: 100%;
         }
     }
+    .prices-titles {
+        padding: 20px 0;
+        border-bottom: solid 0.5px #fff;
+    }
 }
-.prices-titles {
-    padding: 10px 0;
-    border-bottom: solid 0.5px #fff;
-}
+
 .prices-title {
     display: flex;
     flex-direction: column;
@@ -64,13 +65,15 @@
 }
 .tab {
     margin: 0 auto;
-    width: 150px;
     text-align: center;
-    padding: 15px 20px;
-    font-weight: bold;
+    width: 143px;
+    padding: 5px;
+    font-weight: normal;
     font-size: 12px;
     line-height: 18px;
-    margin-top: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px 2px #363636;
 }
 .label {
     display: flex;
@@ -89,6 +92,7 @@
     background-color: #363636;
     color: #cd0003;
     text-align: center;
+    pointer-events: none;
 }
 #logotype:checked ~ .tab__box .logotype,
 #commercialvideo:checked ~ .tab__box .commercialvideo,
@@ -97,7 +101,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 @media screen and (min-width: 540px) {
