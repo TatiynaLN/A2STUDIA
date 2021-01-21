@@ -158,6 +158,37 @@
             top: 70%;
         }
     }
+    /*********   PRICES   ************/
+    .prices {
+        padding-bottom: 20px;
+        .prices-title {
+            padding: 15px;
+            .prices__mobail-none {
+                display: block;
+            }
+        }
+        &__block-title {
+            padding: 15px 0;
+        }
+        h6:nth-child(4) {
+            flex: 1;
+            padding: 0 5px;
+        }
+
+        &__mobail-none {
+            display: block;
+        }
+        &__box {
+            .desktop-none {
+                display: none;
+            }
+
+            p:nth-child(4) {
+                flex: 1;
+                padding: 0 5px;
+            }
+        }
+    }
 }
 @media screen and (min-width: 720px) {
     .footer {
