@@ -987,7 +987,7 @@ li {
   }
   .reviews__modal-box {
     position: relative;
-    max-height: 80%;
+    max-height: 92%;
     padding: 1em;
     background: #fff;
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
@@ -1748,4 +1748,113 @@ li {
 
 .info__headline:hover {
   text-decoration: underline;
+}
+
+.pricesreadmore__block {
+  width: 99%;
+  border: solid 0.5px #fff;
+}
+
+.pricesreadmore-title {
+  display: none;
+}
+
+.pricesreadmore__block-title {
+  border-bottom: solid 0.5px #fff;
+  padding: 10px 0;
+}
+
+.pricesreadmore__block-titles {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.pricesreadmore__color-dark {
+  background-color: #363636;
+}
+
+.pricesreadmore__color-light {
+  background-color: #666;
+}
+
+.pricesreadmore__mobail-none {
+  display: none;
+}
+
+.pricesreadmore .mobail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.pricesreadmore .mobail-img {
+  overflow: hidden;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.pricesreadmore .mobail-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.pricesreadmore div:nth-child(1) {
+  -webkit-box-flex: 1.4;
+      -ms-flex: 1.4;
+          flex: 1.4;
+}
+
+.pricesreadmore div:nth-child(2) {
+  -webkit-box-flex: 0.9;
+      -ms-flex: 0.9;
+          flex: 0.9;
+}
+
+.pricesreadmore__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: left;
+  padding: 10px 0 10px 5px;
+}
+
+.pricesreadmore__box .white-spice {
+  white-space: pre-line;
+}
+
+.pricesreadmore__box p {
+  line-height: 20px;
+}
+
+.pricesreadmore__box-img {
+  overflow: hidden;
+  display: none;
+  /*прячем на маленьких экранах*/
+}
+
+.pricesreadmore__box-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.pricesreadmore .mobail-none {
+  display: none;
 }

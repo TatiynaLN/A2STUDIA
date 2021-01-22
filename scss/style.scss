@@ -651,3 +651,74 @@ li {
 .info__headline:hover {
     text-decoration: underline;
 }
+
+.pricesreadmore {
+    &__block {
+        width: 99%;
+        border: solid 0.5px #fff;
+    }
+    &-title {
+        display: none;
+    }
+    &__block-title {
+        border-bottom: solid 0.5px #fff;
+        padding: 10px 0;
+    }
+    &__block-titles {
+        justify-self: center;
+        align-self: center;
+    }
+    &__color-dark {
+        background-color: #363636;
+    }
+    &__color-light {
+        background-color: #666;
+    }
+    &__mobail-none {
+        display: none;
+    }
+    .mobail {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+    .mobail-img {
+        overflow: hidden;
+        align-self: center;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    div:nth-child(1) {
+        flex: 1.4;
+    }
+    div:nth-child(2) {
+        flex: 0.9;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        text-align: left;
+        padding: 10px 0 10px 5px;
+        .white-spice {
+            white-space: pre-line;
+        }
+        p {
+            line-height: 20px;
+        }
+    }
+    &__box-img {
+        overflow: hidden;
+        display: none; /*прячем на маленьких экранах*/
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .mobail-none {
+        display: none;
+    }
+}
