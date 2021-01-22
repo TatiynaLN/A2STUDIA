@@ -236,9 +236,6 @@ li {
           justify-content: space-between;
   -ms-flex-line-pack: center;
       align-content: center;
-  width: 80%;
-  /* добавлены две строки кода*/
-  margin: 0 auto;
 }
 
 .section__cont {
@@ -1614,6 +1611,9 @@ li {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 90%;
+    /* добавлены 2 строки*/
+    margin: 0 auto;
   }
   .section__cont {
     -webkit-box-pack: justify;
@@ -1631,6 +1631,9 @@ li {
   }
   .section__box-text {
     font-size: 20px;
+    width: 90%;
+    /* добавлены 2 строки*/
+    margin: 0 auto;
   }
   .section__box-texte {
     font-size: 15px;
