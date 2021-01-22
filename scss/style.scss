@@ -183,6 +183,8 @@ li {
         flex-wrap: wrap;
         justify-content: space-between;
         align-content: center;
+        width: 80%; /* добавлены две строки кода*/
+        margin: 0 auto;
     }
 
     &__cont {
