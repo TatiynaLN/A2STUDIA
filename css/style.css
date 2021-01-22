@@ -1698,11 +1698,11 @@ li {
 }
 
 @media screen and (min-width: 1360px) {
-  /*******стрелки слайда  главная страница********/
+  /*******стрелки слайда  главная страница 1360px********/
   .client .slick-arrow {
     top: 75%;
   }
-  section__box {
+  .section__box {
     width: 90%;
     /* добавлены 2 строки*/
     margin: 0 auto;
