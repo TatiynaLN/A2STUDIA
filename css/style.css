@@ -1611,9 +1611,6 @@ li {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 90%;
-    /* добавлены 2 строки*/
-    margin: 0 auto;
   }
   .section__cont {
     -webkit-box-pack: justify;
@@ -1631,12 +1628,12 @@ li {
   }
   .section__box-text {
     font-size: 20px;
-    width: 90%;
-    /* добавлены 2 строки*/
-    margin: 0 auto;
   }
   .section__box-texte {
     font-size: 15px;
+    width: 90%;
+    /* добавлены 2 строки*/
+    margin: 0 auto;
   }
   .footer__containers {
     -ms-flex-pack: distribute;
@@ -1704,6 +1701,11 @@ li {
   /*******стрелки слайда  главная страница********/
   .client .slick-arrow {
     top: 75%;
+  }
+  section__box {
+    width: 90%;
+    /* добавлены 2 строки*/
+    margin: 0 auto;
   }
 }
 
