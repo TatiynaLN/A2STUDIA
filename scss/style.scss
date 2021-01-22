@@ -231,12 +231,16 @@ li {
         width: 260px;
         height: 140px;
         margin: 5px;
+        a {
+            height: 100%;
+        }
         &:hover ~ a {
             color: #cd0003;
         }
+
         img {
             width: 100%;
-            height: auto;
+            height: 100%;
             transform: scale(1);
             -webkit-transform: scale(1);
             -moz-transform: scale(1);
