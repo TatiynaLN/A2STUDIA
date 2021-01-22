@@ -29,7 +29,6 @@
 .modal {
     opacity: 0;
     visibility: hidden;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,6 +42,55 @@
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     z-index: 2;
+}
+/******* СТРАНИЦА ОТЗЫВЫ *******/
+.section__reviews {
+    overflow: hidden;
+}
+.reviews {
+    width: 215px;
+    height: 370px;
+    overflow: hidden;
+    border: solid 0.5px #fff;
+    align-content: center;
+    justify-content: center;
+    display: inline-block;
+    margin: 5px;
+    p {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        height: 10%;
+        background-color: #666;
+        text-align: center;
+    }
+    a {
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+    .reviews-modal {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 5rem;
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        background: rgba(0, 0, 0, 0.7);
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+        z-index: 2;
+    }
 }
 @media screen and (min-width: 900px) {
     .modal__box {
@@ -76,6 +124,41 @@
         img {
             width: 100%;
         }
+    }
+    .reviews__modal-box {
+        position: relative;
+        max-height: 80%;
+        padding: 1em;
+        background: #fff;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        text-align: center;
+        transition: all 0.3s cubic-bezier(0.2, 0.9, 0.3, 1.5);
+        img {
+            width: 450px;
+        }
+    }
+    /* modal magic */
+    .reviews-btn:focus + .reviews-modal {
+        opacity: 1;
+        visibility: visible;
+    }
+    .reviews-modal:focus + .reviews-modal .reviews__modal-box {
+        -webkit-transform: rotate(0deg) translate(0, 0);
+        transform: rotate(0deg) translate(0, 0);
+    }
+    .x {
+        position: absolute;
+        top: -15px;
+        right: -5px;
+        font-size: 10px;
+        padding: 2px 5px;
+        border: solid 1px #fff;
+        border-radius: 50%;
+        background-color: #000;
+        outline: none;
+        color: #fff;
+        box-shadow: -0.2em 0.2em 5px rgba(10, 10, 10, 0.5);
+        cursor: pointer;
     }
 }
 

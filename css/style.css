@@ -1,14 +1,8 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Stem-light";
-  src: url("../fonts/Stem-light.eot");
-  src: url("../fonts/Stem-light.eot") format("eot"), url("../fonts/Stem-light.woff") format("woff"), url("../fonts/Stem-light.ttf") format("truetype"), url("../fonts/Stem-light.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700;900&display=swap");
 body {
-  font-family: "Stem-light", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
 }
 
 a {
@@ -224,10 +218,10 @@ li {
 
 .section__container {
   width: 100%;
+  padding-bottom: 15px;
 }
 
 .section__title {
-  padding-top: 15px;
   font-size: 25px;
 }
 
@@ -355,8 +349,7 @@ li {
 }
 
 .section__box-texte p {
-  font-weight: 100;
-  padding: 15px 0;
+  padding: 8px 0;
 }
 
 .section__box-texte span {
@@ -426,7 +419,7 @@ li {
 
 .footer__nav-podmenu {
   min-width: 160px;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 13px;
 }
 
@@ -504,8 +497,6 @@ li {
   /* Отображаем подсказку поверх других элементов */
   background-color: #363636;
   /* цвет фона */
-  font-family: Arial, sans-serif;
-  /* Гарнитура шрифта */
   font-size: 11px;
   /* Размер текста подсказки */
   padding: 5px 10px;
@@ -874,7 +865,6 @@ li {
 .modal {
   opacity: 0;
   visibility: hidden;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -890,6 +880,69 @@ li {
   bottom: 5rem;
   width: 100%;
   height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  z-index: 2;
+}
+
+/******* СТРАНИЦА ОТЗЫВЫ *******/
+.section__reviews {
+  overflow: hidden;
+}
+
+.reviews {
+  width: 215px;
+  height: 370px;
+  overflow: hidden;
+  border: solid 0.5px #fff;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: inline-block;
+  margin: 5px;
+}
+
+.reviews p {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  height: 10%;
+  background-color: #666;
+  text-align: center;
+}
+
+.reviews a {
+  width: 100%;
+  height: 100%;
+}
+
+.reviews a img {
+  width: 100%;
+}
+
+.reviews .reviews-modal {
+  opacity: 0;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 5rem;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
   background: rgba(0, 0, 0, 0.7);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -931,6 +984,44 @@ li {
   }
   .btn img {
     width: 100%;
+  }
+  .reviews__modal-box {
+    position: relative;
+    max-height: 80%;
+    padding: 1em;
+    background: #fff;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    -webkit-transition: all 0.3s cubic-bezier(0.2, 0.9, 0.3, 1.5);
+    transition: all 0.3s cubic-bezier(0.2, 0.9, 0.3, 1.5);
+  }
+  .reviews__modal-box img {
+    width: 450px;
+  }
+  /* modal magic */
+  .reviews-btn:focus + .reviews-modal {
+    opacity: 1;
+    visibility: visible;
+  }
+  .reviews-modal:focus + .reviews-modal .reviews__modal-box {
+    -webkit-transform: rotate(0deg) translate(0, 0);
+    transform: rotate(0deg) translate(0, 0);
+  }
+  .x {
+    position: absolute;
+    top: -15px;
+    right: -5px;
+    font-size: 10px;
+    padding: 2px 5px;
+    border: solid 1px #fff;
+    border-radius: 50%;
+    background-color: #000;
+    outline: none;
+    color: #fff;
+    -webkit-box-shadow: -0.2em 0.2em 5px rgba(10, 10, 10, 0.5);
+            box-shadow: -0.2em 0.2em 5px rgba(10, 10, 10, 0.5);
+    cursor: pointer;
   }
 }
 
@@ -1509,7 +1600,7 @@ li {
   .section__title {
     margin: 0 auto;
     width: 80%;
-    padding: 30px;
+    padding: 15px;
     font-size: 35px;
   }
   .section__box {
@@ -1533,13 +1624,9 @@ li {
   }
   .section__box-text {
     font-size: 20px;
-    margin: 30px 0;
   }
   .section__box-texte {
-    font-size: 12px;
-  }
-  .section__box-texte p {
-    padding: 20px 0;
+    font-size: 15px;
   }
   .footer__containers {
     -ms-flex-pack: distribute;

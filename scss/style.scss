@@ -1,19 +1,23 @@
-@font-face {
-    font-family: "Stem-light";
+// @font-face {
+//     font-family: "Stem-light";
 
-    src: url("../fonts/Stem-light.eot");
+//     src: url("../fonts/Stem-light.eot");
 
-    src: url("../fonts/Stem-light.eot") format("eot"), url("../fonts/Stem-light.woff") format("woff"),
-        url("../fonts/Stem-light.ttf") format("truetype"), url("../fonts/Stem-light.woff2") format("woff2");
+//     src: url("../fonts/Stem-light.eot") format("eot"), url("../fonts/Stem-light.woff") format("woff"),
+//         url("../fonts/Stem-light.ttf") format("truetype"), url("../fonts/Stem-light.woff2") format("woff2");
 
-    font-weight: normal;
+//     font-weight: normal;
 
-    font-style: normal;
-}
+//     font-style: normal;
+// }
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700;900&display=swap");
 
 body {
     // font-family: "Noto Sans", sans-serif;
-    font-family: "Stem-light", sans-serif;
+    // font-family: "Stem-light", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
 }
 a {
     text-decoration: none;
@@ -168,9 +172,10 @@ li {
     text-align: center;
     &__container {
         width: 100%;
+        padding-bottom: 15px;
     }
     &__title {
-        padding-top: 15px;
+        // padding-top: 15px;
         font-size: 25px;
     }
     &__box {
@@ -266,8 +271,8 @@ li {
         line-height: 20px;
         word-wrap: break-all;
         p {
-            font-weight: 100;
-            padding: 15px 0;
+            // font-weight: 100;
+            padding: 8px 0;
         }
         span {
             white-space: pre;
@@ -317,7 +322,7 @@ li {
 
     &__nav-podmenu {
         min-width: 160px;
-        font-weight: 200;
+        font-weight: 400;
         font-size: 13px;
         li {
             padding: 10px;
@@ -366,7 +371,6 @@ li {
     color: #fff;
     z-index: 1; /* Отображаем подсказку поверх других элементов */
     background-color: #363636; /* цвет фона */
-    font-family: Arial, sans-serif; /* Гарнитура шрифта */
     font-size: 11px; /* Размер текста подсказки */
     padding: 5px 10px; /* Поля */
     border: 1px solid #333; /* Параметры рамки */

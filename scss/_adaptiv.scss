@@ -288,7 +288,7 @@
         &__title {
             margin: 0 auto;
             width: 80%;
-            padding: 30px;
+            padding: 15px;
             font-size: 35px;
         }
 
@@ -310,13 +310,10 @@
 
         &__box-text {
             font-size: 20px;
-            margin: 30px 0;
+            // margin: 30px 0;
         }
         &__box-texte {
-            font-size: 12px;
-            p {
-                padding: 20px 0;
-            }
+            font-size: 15px;
         }
     }
     .footer {
