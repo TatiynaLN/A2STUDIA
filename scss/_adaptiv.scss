@@ -116,6 +116,9 @@
     }
 }
 @media screen and (min-width: 600px) {
+    .none {
+        display: block;
+    }
     .section {
         &__box-texte {
             line-height: 25px;
@@ -239,25 +242,25 @@
         &__mobail-none {
             display: block;
         }
-        .mobail-img {
-            display: none;
-        }
-        p:nth-child(1) {
-            flex: 1;
-            padding-left: 5px;
-        }
-        p:nth-child(2) {
-            flex: 1;
-            padding: 0 5px;
-            text-align: center;
-        }
-        p:nth-child(3) {
-            flex: 1.5;
-        }
-        p:nth-child(4) {
-            flex: 2.5;
-            padding: 5px 5px;
-        }
+
+        // .mobail-img {
+        //     display: none;
+        // }
+        // p:nth-child(1) {
+        //     flex: 1;
+        //     padding-left: 5px;
+        // }
+        // p:nth-child(2) {
+        //     flex: 1;
+        //     padding: 0 5px;
+        // }
+        // p:nth-child(3) {
+        //     flex: 1.5;
+        // }
+        // p:nth-child(4) {
+        //     flex: 2.5;
+        //     padding: 5px 5px;
+        // }
         &__box {
             flex-direction: row;
             padding: 0 5px;
@@ -274,6 +277,43 @@
     .footer {
         &__bottom {
             width: 80%;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .pricesreadmore {
+        .info__switch {
+            display: none;
+        }
+        .info__headline {
+            display: none;
+        }
+        .info__body {
+            display: block;
+            overflow: visible;
+            width: 100%;
+            max-height: max-content;
+        }
+        .info {
+            width: 40%;
+            height: 100%;
+            max-height: max-content;
+        }
+        &__boxs {
+            width: 38%;
+        }
+        .desctop {
+            display: flex;
+            width: 100%;
+            gap: 0 1rem;
+        }
+        .mobail {
+            min-width: 60%;
+            gap: 0 1rem;
+        }
+        .mobail-img {
+            width: 58%;
+            margin-top: 0;
         }
     }
 }
@@ -379,6 +419,68 @@
         &__box {
             width: 90%; /* добавлены 2 строки*/
             margin: 0 auto;
+        }
+    }
+}
+@media screen and (min-width: 1560px) {
+    .pricesreadmore {
+        &-titl {
+            display: block;
+            display: flex;
+            justify-content: flex-start;
+            align-content: center;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        &__boxs {
+            display: flex;
+            flex-direction: row;
+            gap: 0 1rem;
+            P {
+                max-width: 50%;
+            }
+        }
+        &__block-title {
+            padding: 1rem 0;
+        }
+        .one {
+            width: 20%;
+        }
+        .two {
+            width: 20%;
+        }
+        .three {
+            width: 25%;
+        }
+        .foo {
+            width: 35%;
+        }
+        .info__switch {
+            display: none;
+        }
+        .info__headline {
+            display: none;
+        }
+        .info {
+            width: 30%;
+        }
+        &__boxs {
+            width: 48%;
+            justify-content: space-between;
+        }
+
+        .mobail {
+            min-width: 70%;
+        }
+        .mobail-img {
+            width: 50%;
+            margin-top: 0;
+            img {
+                max-width: 300px;
+            }
+        }
+        .desctop {
+            gap: 0;
         }
     }
 }

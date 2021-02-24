@@ -448,6 +448,7 @@ li {
 /*********   PRICES   ************/
 .prices {
     padding-bottom: 10px;
+    margin-top: 1rem;
     overflow: hidden;
     &__block {
         width: 99%;
@@ -550,9 +551,11 @@ li {
         justify-self: center;
         align-self: center;
     }
+    .desctop__color-dark,
     &__color-dark {
         background-color: #363636;
     }
+    .desctop__color-light,
     &__color-light {
         background-color: #666;
     }
@@ -567,17 +570,18 @@ li {
     .mobail-img {
         overflow: hidden;
         align-self: center;
+        margin-top: 0.5rem;
         img {
             width: 100%;
             height: 100%;
         }
     }
-    div:nth-child(1) {
-        flex: 1.4;
-    }
-    div:nth-child(2) {
-        flex: 0.9;
-    }
+    // div:nth-child(1) {
+    //     flex: 1.4;
+    // }
+    // div:nth-child(2) {
+    //     flex: 0.9;
+    // }
     &__box {
         display: flex;
         flex-direction: column;
@@ -606,21 +610,31 @@ li {
 @import "../scss/modal";
 // @import "../scss/tabs";
 @import "../scss/slider";
-@import "../scss/adaptiv";
 
 .info {
-    background-color: #363636;
     padding: 10px 25px;
 }
-
+.info-dark {
+    background-color: #363636;
+}
+.info-light {
+    background-color: #666;
+}
 .info__switch {
     display: none;
 }
 
 .info__body {
     max-height: 0;
-    overflow: hidden;
+    overflow: auto;
     transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 1rem 0 0 0;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 .info__switch:checked ~ .info__body {
@@ -630,9 +644,9 @@ li {
 .info__headline::before {
     content: "";
     position: absolute;
-    left: -18px;
-    top: 4px;
-    border: 6px solid #39739d;
+    left: 35%;
+    top: 45%;
+    border: 6px solid #cd0003;
     border-bottom-color: transparent;
     border-right-color: transparent;
     border-left-color: transparent;
@@ -640,16 +654,17 @@ li {
 
 .info__switch:checked ~ .info__headline::before {
     transform: rotate(180deg) translateY(6px);
+    top: 35%;
 }
 
 .info__headline {
     display: block;
     position: relative;
-    margin-bottom: 15px;
     user-select: none;
-    color: #39739d;
+    color: #cd0003;
     font-weight: normal;
     cursor: pointer;
+    text-align: left;
 }
 
 .info__headline:hover {
@@ -661,12 +676,14 @@ li {
         width: 99%;
         border: solid 0.5px #fff;
     }
-    &-title {
+    &-titl {
         display: none;
+        padding: 10px 5px;
     }
     &__block-title {
         border-bottom: solid 0.5px #fff;
         padding: 10px 0;
+        font-size: 24px;
     }
     &__block-titles {
         justify-self: center;
@@ -685,6 +702,7 @@ li {
         display: flex;
         justify-content: space-between;
         align-content: center;
+        gap: 0 2rem;
     }
     .mobail-img {
         overflow: hidden;
@@ -694,27 +712,26 @@ li {
             height: 100%;
         }
     }
-    div:nth-child(1) {
-        flex: 1.4;
-    }
-    div:nth-child(2) {
-        flex: 0.9;
-    }
-    &__box {
+
+    &__boxs {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-content: center;
         text-align: left;
+        justify-self: center;
+        align-self: center;
+        gap: 1rem;
         padding: 10px 0 10px 5px;
-        .white-spice {
-            white-space: pre-line;
-        }
+        // .white-spice {
+        //     white-space: pre-line;
+        // }
         p {
             line-height: 20px;
         }
     }
     &__box-img {
+        max-width: 50%;
         overflow: hidden;
         display: none; /*прячем на маленьких экранах*/
         img {
@@ -726,3 +743,23 @@ li {
         display: none;
     }
 }
+.pad {
+    padding: 2rem 0;
+}
+.none {
+    display: none;
+}
+.prices__block-title {
+    font-size: 24px;
+}
+/* MAP */
+.map {
+    &__box-texte {
+        margin-top: 4rem;
+    }
+    &__title {
+        font-size: 24px;
+        text-align: center;
+    }
+}
+@import "../scss/adaptiv";
