@@ -1444,13 +1444,104 @@ li {
 }
 
 /* MAP */
+.map__container {
+  margin: 0 auto;
+  width: 90%;
+  padding: 4rem 0;
+}
+
 .map__box-texte {
   margin-top: 4rem;
 }
 
 .map__title {
-  font-size: 24px;
+  font-size: 36px;
+  font-weight: bold;
   text-align: center;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.sitemap,
+.sitemaps {
+  border: 1px solid transparent;
+  -webkit-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out;
+  padding-left: 5px;
+}
+
+.sitemap:hover, .sitemap:focus, .sitemap:active, .sitemap:target,
+.sitemaps:hover,
+.sitemaps:focus,
+.sitemaps:active,
+.sitemaps:target {
+  border-radius: 9px;
+  background-color: #666;
+  -webkit-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out;
+}
+
+.sitemap p {
+  margin-bottom: 0.8rem;
+}
+
+.sitemap__title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.sitemap__titl {
+  font-size: 22px;
+  margin-bottom: 1rem;
+  width: 100%;
+  font-weight: 500;
+  position: relative;
+}
+
+.sitemap__titls {
+  margin-bottom: 1rem;
+  font-size: 22px;
+  font-weight: 360;
+  text-align: left;
+}
+
+.sitemap__box {
+  -webkit-transition: 1s;
+  transition: 1s;
+  padding-bottom: 1rem;
+}
+
+.sitemap__box p, .sitemap__boxs p {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.abouts {
+  padding: 1rem 1rem 0.2rem 1rem;
+}
+
+.hover {
+  display: inline-block;
+  position: relative;
+  padding: 1rem 1rem 0.2rem 1rem;
+}
+
+.hover:before {
+  content: "";
+  border: solid transparent;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-top-color: #eee;
+  border-width: 9px;
+  margin-left: -9px;
+}
+
+.hover:hover a, .hover:hover::before {
+  color: #cd0003;
+  border-top-color: #cd0003;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1573,6 +1664,17 @@ li {
 @media screen and (min-width: 540px) {
   .section__box-texte span {
     margin-left: 20px;
+  }
+  .sitemap__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 0 3vw;
+  }
+  .sitemap__boxs {
+    width: 48%;
   }
 }
 
@@ -1798,6 +1900,12 @@ li {
     width: 58%;
     margin-top: 0;
   }
+  .sitemap__box {
+    gap: 0 0.2vw;
+  }
+  .sitemap__boxs {
+    width: 30%;
+  }
 }
 
 @media screen and (min-width: 1020px) {
@@ -1902,6 +2010,15 @@ li {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .sitemap__box {
+    gap: 0 0.2vw;
+  }
+  .sitemap__boxs {
+    width: 23%;
+  }
+}
+
 @media screen and (min-width: 1360px) {
   /*******стрелки слайда  главная страница 1360px********/
   .client .slick-arrow {
@@ -1983,5 +2100,30 @@ li {
   }
   .pricesreadmore .desctop {
     gap: 0;
+  }
+  .map__box-texte {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .map__title {
+    width: 100%;
+  }
+  .sitemaps {
+    width: 48%;
+  }
+  .sitemaps .sitemap__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sitemap {
+    width: 16%;
+  }
+  .sitemap__boxs, .sitemap__box {
+    margin: 0 auto;
+    width: 80%;
   }
 }

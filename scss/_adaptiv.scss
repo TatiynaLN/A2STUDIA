@@ -114,6 +114,16 @@
             }
         }
     }
+    .sitemap {
+        &__box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0 3vw;
+        }
+        &__boxs {
+            width: 48%;
+        }
+    }
 }
 @media screen and (min-width: 600px) {
     .none {
@@ -316,6 +326,14 @@
             margin-top: 0;
         }
     }
+    .sitemap {
+        &__box {
+            gap: 0 0.2vw;
+        }
+        &__boxs {
+            width: 30%;
+        }
+    }
 }
 @media screen and (min-width: 1020px) {
     /*********SECTION***********/
@@ -408,6 +426,16 @@
         }
     }
 }
+@media screen and (min-width: 1200px) {
+    .sitemap {
+        &__box {
+            gap: 0 0.2vw;
+        }
+        &__boxs {
+            width: 23%;
+        }
+    }
+}
 @media screen and (min-width: 1360px) {
     /*******стрелки слайда  главная страница 1360px********/
     .client {
@@ -481,6 +509,33 @@
         }
         .desctop {
             gap: 0;
+        }
+    }
+    .map__box-texte {
+        display: flex;
+        flex-wrap: wrap;
+        // &__box {
+        //     gap: 0 0.2vw;
+        // }
+        // &__boxs {
+        //     width: 23%;
+        // }
+    }
+    .map__title {
+        width: 100%;
+    }
+    .sitemaps {
+        width: 48%;
+        .sitemap__block {
+            display: flex;
+        }
+    }
+    .sitemap {
+        width: 16%;
+        &__boxs,
+        &__box {
+            margin: 0 auto;
+            width: 80%;
         }
     }
 }
