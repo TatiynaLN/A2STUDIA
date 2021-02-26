@@ -299,6 +299,32 @@ li {
         }
     }
 }
+.video {
+    margin: 0 auto;
+    // width: 95%;
+    // padding: 2rem 0;
+    width: 95%;
+    height: 0;
+    padding-bottom: 56.25%;
+    background-color: #000;
+    position: relative;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+.videos {
+    padding: 2rem 0;
+    .section__box-texte {
+        margin-top: 2rem;
+    }
+    .section__title {
+        margin-bottom: 2rem;
+    }
+}
 .section-color {
     background-color: #363636;
 }
@@ -362,24 +388,7 @@ li {
         line-height: 40px;
     }
 }
-/********** TITLE ***************/
-.data-title {
-    display: inline-block; /* Строчно-блочный элемент */
-    position: relative; /* Относительное позиционирование */
-}
-.data-title:hover::after {
-    content: attr(data-title); /* Выводим текст */
-    position: absolute; /* Абсолютное позиционирование */
-    right: 20%;
-    bottom: 110%; /* Положение подсказки */
-    color: #fff;
-    z-index: 1; /* Отображаем подсказку поверх других элементов */
-    background-color: #363636; /* цвет фона */
-    font-size: 11px; /* Размер текста подсказки */
-    padding: 5px 10px; /* Поля */
-    border: 1px solid #333; /* Параметры рамки */
-    width: 200px;
-}
+
 /**********modeling***************/
 
 .section {
@@ -786,9 +795,6 @@ li {
     }
 }
 .sitemap {
-    p {
-        margin-bottom: 0.8rem;
-    }
     &__title {
         font-size: 26px;
         font-weight: bold;
@@ -817,6 +823,11 @@ li {
             text-align: left;
             font-size: 18px;
             font-weight: 300;
+            width: 100%;
+            a {
+                padding: 0.5rem 0;
+                width: 100%;
+            }
         }
     }
 }

@@ -384,6 +384,35 @@ li {
   font-weight: 600;
 }
 
+.video {
+  margin: 0 auto;
+  width: 95%;
+  height: 0;
+  padding-bottom: 56.25%;
+  background-color: #000;
+  position: relative;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.videos {
+  padding: 2rem 0;
+}
+
+.videos .section__box-texte {
+  margin-top: 2rem;
+}
+
+.videos .section__title {
+  margin-bottom: 2rem;
+}
+
 .section-color {
   background-color: #363636;
 }
@@ -478,36 +507,6 @@ li {
       -ms-flex-order: 0;
           order: 0;
   line-height: 40px;
-}
-
-/********** TITLE ***************/
-.data-title {
-  display: inline-block;
-  /* Строчно-блочный элемент */
-  position: relative;
-  /* Относительное позиционирование */
-}
-
-.data-title:hover::after {
-  content: attr(data-title);
-  /* Выводим текст */
-  position: absolute;
-  /* Абсолютное позиционирование */
-  right: 20%;
-  bottom: 110%;
-  /* Положение подсказки */
-  color: #fff;
-  z-index: 1;
-  /* Отображаем подсказку поверх других элементов */
-  background-color: #363636;
-  /* цвет фона */
-  font-size: 11px;
-  /* Размер текста подсказки */
-  padding: 5px 10px;
-  /* Поля */
-  border: 1px solid #333;
-  /* Параметры рамки */
-  width: 200px;
 }
 
 /**********modeling***************/
@@ -1481,10 +1480,6 @@ li {
   transition: all 0.75s ease-out;
 }
 
-.sitemap p {
-  margin-bottom: 0.8rem;
-}
-
 .sitemap__title {
   font-size: 26px;
   font-weight: bold;
@@ -1516,6 +1511,12 @@ li {
   text-align: left;
   font-size: 18px;
   font-weight: 300;
+  width: 100%;
+}
+
+.sitemap__box p a, .sitemap__boxs p a {
+  padding: 0.5rem 0;
+  width: 100%;
 }
 
 .abouts {
@@ -2007,6 +2008,9 @@ li {
         -ms-flex: 2;
             flex: 2;
     padding: 5px 5px;
+  }
+  .video {
+    width: 85%;
   }
 }
 
