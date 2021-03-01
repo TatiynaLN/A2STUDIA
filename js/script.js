@@ -50,11 +50,9 @@ $(window).load(function () {
         afterLoad: function () { }
     });
 });
-//GAMBURGER
 
-$(".toggle-icon").click(function () {
-    $('#nav-container').toggleClass("pushed");
-});
+
+
 
 // active menu
 
@@ -131,6 +129,8 @@ $(document).ready(function () {
         mobileFirst: true
     });
 });
+
+
 $(document).ready(function () {
     $('.similar').slick({
         arrows: true,

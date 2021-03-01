@@ -35,40 +35,44 @@
                             </p>
                         </div>
                     </div>
-                    <div id="nav-container">
-                        <div class="toggle-icon">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </div><!-- /toggle-icon -->
-                        <ul class="menu__list" id="cllu">
-                            <li class="menu__list-item"><a href="index.html">ГЛАВНАЯ</a>
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+
+                        <ul class="menu__box" id="cllu">
+                            <li><a class="menu__item" href="index.html">ГЛАВНАЯ</a>
                             </li>
-                            <li class="menu__list-item list__podmenu"><a href="portfolio.html">ПОРТФОЛИО <span> ↴</span>
+                            <li class="list__podmenu"><a class="menu__item" href="portfolio.html">ПОРТФОЛИО <span>
+                                        ↴</span>
                                 </a>
                                 <ul class="podmenu__list">
-                                    <li><a href="modeling.html">МОДЕЛИРОВАНИЕ</a>
+                                    <li><a class="podmenu__item" href="modeling.html">МОДЕЛИРОВАНИЕ</a>
                                     </li>
-                                    <li><a class="active" href="animations.html">АНИМАЦИЯ</a></li>
+                                    <li><a class="active podmenu__item" href="animations.html">АНИМАЦИЯ</a></li>
                                 </ul>
                             </li>
-                            <li class="menu__list-item list__podmenu"><a href="prices.html">ЦЕНЫ <span> ↴</span>
+                            <li class="list__podmenu"><a class="menu__item" href="prices.html">ЦЕНЫ <span> ↴</span>
                                 </a>
                                 <ul class="podmenu__list">
-                                    <li><a href="pricesvideos.html">ЦЕНЫ НА
+                                    <li><a class="podmenu__item" href="pricesvideos.html">ЦЕНЫ НА
                                             РОЛИКИ</a>
                                     </li>
-                                    <li><a href="otherprices.html">ДРУГИЕ ЦЕНЫ</a>
+                                    <li><a class="podmenu__item" href="otherprices.html">ДРУГИЕ ЦЕНЫ</a>
                                     </li>
-                                    <li><a href="pricelist.html">ПРАЙС-ЛИСТЫ</a>
+                                    <li><a class="podmenu__item" href="pricelist.html">ПРАЙС-ЛИСТЫ</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="menu__list-item">
-                                <a href="reviews.html">ОТЗЫВЫ</a>
+                            <li>
+                                <a class="menu__item" href="reviews.html">ОТЗЫВЫ</a>
                             </li>
-                            <li class="menu__list-item">
-                                <a href="aboutus.html">О НАС</a>
+                            <li>
+                                <a class="menu__item" href="aboutus.html">О НАС</a>
+                            </li>
+                            <li>
+                                <a class="menu__item" href="sitemap.html">КАРТА САЙТА</a>
                             </li>
                         </ul>
                     </div>
@@ -84,7 +88,7 @@
                 <img title="#htmlcaption" src="img/Banner_03.jpg" alt="" />
                 <img title="#htmlcaption" src="img/Banner_04.jpg" alt="" data-transition="fold" />
             </div>
-            <section class="section section-color">
+            <section class="section section-colors">
                 <div class="section__container ">
                     <h1 class="section__title">
                         АНИМАЦИЯ
@@ -104,7 +108,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section section-colors">
+            <section class="section section-color" id="advertising">
                 <div class="section__container ">
                     <h1 class="section__title">
                         РЕКЛАМНЫЕ
@@ -137,7 +141,7 @@
                         <div class="section__conts section__boxs-height">
                             <div class="section__conts-img">
                                 <a href="bauer2.html">
-                                    <img src="img/bauer-2.jpg" alt="">
+                                    <img src="img/bauer-2.jpg" alt="«BAUER» ЧАСТЬ ВТОРАЯ">
                                 </a>
                             </div>
                             <a class="section__conts-text section__boxs-top" href="bauer2.html">
@@ -159,7 +163,7 @@
                         <div class="section__conts section__boxs-height">
                             <div class="section__conts-img">
                                 <a href="prom-ino.html">
-                                    <img src="img/portfolio/prom-ino.jpg" alt="">
+                                    <img src="img/portfolio/prom-ino.jpg" alt="ПРОМЫШЛЕННАЯ ИННОВАЦИЯ">
                                 </a>
                             </div>
                             <a class="section__conts-text section__boxs-top" href="prom-ino.html">
@@ -170,7 +174,7 @@
                         <div class="section__conts section__boxs-height">
                             <div class="section__conts-img">
                                 <a href="semecki.html">
-                                    <img src="img/prices/semecki.jpg" alt="">
+                                    <img src="img/prices/semecki.jpg" alt="Семечки Карпайские">
                                 </a>
                             </div>
                             <a class="section__conts-text section__boxs-top" href="semecki.html">
@@ -192,7 +196,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section section-color">
+            <section class="section section-colors">
                 <div class="section__container ">
                     <h1 class="section__title" id="image">
                         ИМИДЖЕВЫЕ
@@ -316,46 +320,42 @@
                 </div>
 
             </section>
-            <section class="section section-colors">
-                <div class="section__container ">
-                    <h1 class="section__title"><a href="animations.html">
-                            ИНФОГРАФИКА</a>
+            <section class="section section-color">
+                <div class="section__container">
+                    <h1 class="section__title" id="infographics">
+                        ИНФОГРАФИКА
                     </h1>
-                    <div class="section__cont">
+                    <div class="section__box">
                         <div class="section__box-texte">
                             <p class="">
                                 Обучающий ролик — это удобно, так как гораздо проще один раз посмотреть видео, которое
                                 будет подробно рассказывать и показывать, что нужно делать и как правильно это делать,
                                 чем штудировать многостраничные инструкции.
                             </p>
-
                         </div>
-                        <div class="section__boxs-height section__boxs-center">
-                            <p class="section__box-text section__boxs-top">
-                                Робот промоутер KIKI
-                            </p>
-                            <div class="section__box-img">
-                                <iframe width="300" height="168" src="https://www.youtube.com/embed/ASArt73ETw8?rel=0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-
+                        <div class="section__box conts section__cont">
+                            <div class="section__conts section__boxs-height">
+                                <div class="section__conts-img section__boxs-img">
+                                    <a href="kiki.html">
+                                        <img src="img/prices/kiki.jpg" alt="РОБОТ ПРОМОУТЕР КИКИ">
+                                    </a>
+                                </div>
+                                <a class="section__conts-text section__boxs-top" href="kiki.html">
+                                    Робот промоутер KIKI
+                                </a>
+                                <p class="bottom">Робот промоутер KIKI
+                                </p>
                             </div>
-                            <p class="section__box-texte">
-                                Презентационный ролик для компании AlfaRobotics. Данный ролик является презентацией
-                                робота промоутера KIKI. Данная работа делалась по заказу Кино-видеостудии Александра
-                                Реуцкого
-                            </p>
                         </div>
-
                     </div>
                 </div>
             </section>
-            <section class="section section-color">
+            <section class="section section-colors">
                 <div class="section__container ">
                     <h1 class="section__title" id="logos">
                         ЛОГОТИПЫ
                     </h1>
-                    <div class="section__cont">
+                    <div class="section__box">
                         <div class="section__box-texte">
                             <p class="">
                                 Первые секунды имиджевого или рекламного ролика отводятся эффектному появлению на экране
@@ -365,174 +365,84 @@
                                 момент в памяти аудитории, и потенциальные клиенты всегда будут узнавать ваш бренд,
                                 выделяя его из массы ваших конкурентов.
                             </p>
-
                         </div>
-                        <div class="section__boxs-height">
-                            <p class="section__box-text section__boxs-top">
-                                Атекс
-                            </p>
-                            <div class="section__box-img">
-                                <iframe width="300" height="168" src="https://www.youtube.com/embed/i92KpGQK7TE?rel=0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-
-                            </div>
-                            <p class="section__box-texte section__box-color">
-                                Логотип для имиджевого 3D ролика ООО «АТЭКС-Электро»
-                            </p>
-                        </div>
-                        <div class="section__boxs-height">
-                            <p class="section__box-text section__boxs-top">
-                                Бронницы
-                            </p>
-                            <div class="section__box-img">
-                                <iframe width="300" height="168" src="https://www.youtube.com/embed/KWtgVm6hm6c?rel=0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
-                            <p class="section__box-texte section__box-color">
-                                Анимированный логотип НИИ Бронницы позволяет сделать бренд узнаваемым. С помощью техники
-                                3D анимации изображение основных образных элементов обыгрывается интересными
-                                оригинальными спецэффектами и меняющимся фоном.
-                            </p>
-                        </div>
-                        <div class="section__boxs-height">
-                            <p class="section__box-text section__boxs-top">
-                                Виллина
-                            </p>
-                            <div class="section__box-img">
-
-                                <iframe width="300" height="168" src="https://www.youtube.com/embed/rLY2-k2Jk0k?rel=0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-
-                            </div>
-                            <p class="section__box-texte section__box-color">
-                                Логотип делался для ООО "Villina" Приоритетным направлением деятельности компании
-                                является производство герметичных насосов. Мы это учли и постарались сделать анимацию
-                                наиболее подходящию компании.
-                            </p>
-                        </div>
-                        <div class="section__boxs-height">
-                            <p class="section__box-text section__boxs-top">
-                                Инвитро
-                            </p>
-                            <div class="section__box-img">
-
-                                <iframe width="300" height="168" src="https://www.youtube.com/embed/IMkGvJv9Sr0?rel=0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-
-                            </div>
-                            <p class="section__box-texte section__box-color">
-                                Яркое оригинальное обыгрывание логотипа сети медицинских клиник Инвитро делает этот
-                                бренд легко узнаваемым потребителями услуг. В видеосюжете использованы специфические
-                                медицинские атрибуты и сделан акцент на максимальную точность диагностики и рецептуры.
-                                3D анимация позволяет преподнести бренд интересно.
-                            </p>
-                        </div>
-                        <div class="section__boxs-height" id="atex">
-                            <p class="section__box-text section__boxs-top">
-                                Логотип Alta Group
-                            </p>
-                            <div class="section__box-img">
-
-                                <iframe width="300" height="168" src="https://www.youtube.com/embed/Bb74jfcAERs?rel=0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-
-                            </div>
-                            <p class="section__box-texte section__box-color">
-                                Логотип делался для Компании Alta Group, Российского производителя очистных сооружений.
-                            </p>
-                        </div>
-                        <div class="section__boxs-height">
-                            <p class="section__box-text section__boxs-top">
-                                Логотип VTS Film
-                            </p>
-                            <div class="section__box-img">
-
-                                <iframe width="300" height="168" src="https://www.youtube.com/embed/llKfBmgyHSw?rel=0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
-                            <p class="section__box-texte">
-                                Логотип делался для полнометражного художественного фильма: Кто следующий, мечтатели?.
-                            </p>
-                        </div>
-
                     </div>
                 </div>
-            </section>
-            <section class="section section-colors">
                 <div class="section__container">
-                    <h1 class="section__title">
-                        У НАС ВЫ МОЖЕТЕ ЗАКАЗАТЬ КАЧЕСТВЕННЫЕ 3D РОЛИКИ И МОДЕЛИ
-                    </h1>
-                    <div class="section__box-texte">
-                        <p class="">
-                            НАЙДИТЕ ИНТЕРЕСУЮЩУЮ ВАС УСЛУГУ
-                            <br>
-                            ОФОРМИТЕ У НАС ЗАКАЗ
-                        </p>
-                        <div class="section__box-textes">
-                            <p>
-                                СВЯЗАВШИСЬ С НАМИ ПО ТЕЛЕФОНУ
-                                <span>+7 (961) 121-81-63</span>
-                            </p>
-                            <p>
-                                ЗАДАЙТЕ ВОПРОС ПИСЬМЕННО
-                                <span class="section__box-texte-left">a2studia@inbox.ru</span>
+                    <div class="section__box conts section__cont">
+                        <div class="section__conts section__boxs-height">
+                            <div class="section__conts-img section__boxs-img">
+                                <a href="atex02.html">
+                                    <img src="img/portfolio/atex02.jpg" alt="Атекс лого">
+                                </a>
+                            </div>
+                            <a class="section__conts-text section__boxs-top" href="atex02.html">
+                                Атекс
+                            </a>
+                            <p class="bottom">Атекс лого
                             </p>
                         </div>
-                        <p class="">
-                            ВЫ МОЖЕТЕ В ЛЮБОЕ ВРЕМЯ УЗНАТЬ ИНФОРМАЦИЮ ОБ ИНТЕРЕСУЮЩЕЙ ВАС УСЛУГЕ.
-                        </p>
+                        <div class="section__conts section__boxs-height">
+                            <div class="section__conts-img">
+                                <a href="bronici.html">
+                                    <img src="img/portfolio/bronici.jpg" alt="Логотип для НИИ Бронницы ">
+                                </a>
+                            </div>
+                            <a class="section__conts-text section__boxs-top" href="bronici.html">
+                                Бронницы
+                            </a>
+                            <p class="bottom">Логотип для НИИ Бронницы </p>
+                        </div>
+                        <div class="section__conts section__boxs-height">
+                            <div class="section__conts-img">
+                                <a href="vilina.html">
+                                    <img src="img/portfolio/vilina.jpg" alt="Логотип для ООО Villina">
+                                </a>
+                            </div>
+                            <a class="section__conts-text section__boxs-top" href="vilina.html">
+                                Villina
+                            </a>
+                            <p class="bottom">Логотип для ООО "Villina"</p>
+                        </div>
+                        <div class="section__conts section__boxs-height">
+                            <div class="section__conts-img">
+                                <a href="invitro.html">
+                                    <img src="img/prices/invitro.jpg" alt="Инвитро заставка ">
+                                </a>
+                            </div>
+                            <a class="section__conts-text section__boxs-top" href="invitro.html">
+                                Инвитро
+                            </a>
+                            <p class="bottom">Инвитро заставка </p>
+                        </div>
+                        <div class="section__conts section__boxs-height">
+                            <div class="section__conts-img">
+                                <a href="altagroup.html">
+                                    <img src="img/portfolio/altagroup.jpg" alt="Логотип для ООО Villina">
+                                </a>
+                            </div>
+                            <a class="section__conts-text section__boxs-top" href="altagroup.html">
+                                Логотип Alta Group
+                            </a>
+                            <p class="bottom">Логотип для ООО "Villina"</p>
+                        </div>
+                        <div class="section__conts section__boxs-height">
+                            <div class="section__conts-img">
+                                <a href="film.html">
+                                    <img src="img/portfolio/film.jpg" alt="Логотип для ООО Villina">
+                                </a>
+                            </div>
+                            <a class="section__conts-text section__boxs-top" href="film.html">
+                                Логотип VTS Film
+                            </a>
+                            <p class="bottom">Логотип для ООО "Villina"</p>
+                        </div>
                     </div>
                 </div>
             </section>
             <footer class="section section-color">
                 <div class="footer__container">
                     <div class="footer__containers cont">
-                        <nav class="footer__nav">
-                            <ul class="footer__nav-menu">
-                                <li><a href="index.html">Главная</a>
-                                </li>
-                                <li class="footer__nav-list"><a href="portfolio.html">Портфолио
-                                        <span> ↴</span>
-                                    </a>
-                                    <ul class="footer__nav-podmenu">
-                                        <li><a href="modeling.html">Моделирование
-                                            </a>
-                                        </li>
-                                        <li><a class="active" href="animations.html">Анимация</a></li>
-                                    </ul>
-                                </li>
-                                <li class="footer__nav-list"><a href="prices.html">Цены
-                                        <span> ↴</span>
-                                    </a>
-                                    <ul class="footer__nav-podmenu">
-                                        <li><a href="pricesvideos.html">Цены на ролики
-                                            </a>
-                                        </li>
-                                        <li><a href="otherprices.html">Другие цены
-                                            </a>
-                                        </li>
-                                        <li><a href="pricelist.html">Прайс-листы</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="reviews.html">Отзывы</a>
-                                </li>
-                                <li>
-                                    <a href="aboutus.html">О нас</a>
-                                </li>
-                                <li>
-                                    <a href="sitemap.html">Карта сайта</a>
-                                </li>
-                            </ul>
-                        </nav>
                         <div class="footer__logo">
                             <a href="index.html"><img src="img/logo.svg" alt=""></a>
                         </div>

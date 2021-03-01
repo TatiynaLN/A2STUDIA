@@ -16,6 +16,7 @@
 
 @media screen and (max-width: 1020px) {
     .cont {
+        margin: 0 auto;
         width: 90%;
     }
 }
@@ -46,16 +47,7 @@
     .contact {
         margin-top: 9px;
     }
-    .menu {
-        &__list {
-            margin-top: 25px;
-        }
-    }
-    .podmenu {
-        &__list {
-            font-size: 14px;
-        }
-    }
+
     .wrapper {
         padding: 15px 0;
     }
@@ -88,6 +80,21 @@
         opacity: 1;
         z-index: 1;
         position: relative;
+    }
+}
+@media screen and (min-width: 1100px) {
+    footer {
+        overflow: hidden;
+        padding: 3rem 0;
+    }
+    .footer__containers {
+        position: absolute;
+        top: 0;
+        left: 43%;
+    }
+    .footer__container {
+        position: relative;
+        top: 0;
     }
 }
 @media screen and (min-width: 411px) {
@@ -252,25 +259,6 @@
         &__mobail-none {
             display: block;
         }
-
-        // .mobail-img {
-        //     display: none;
-        // }
-        // p:nth-child(1) {
-        //     flex: 1;
-        //     padding-left: 5px;
-        // }
-        // p:nth-child(2) {
-        //     flex: 1;
-        //     padding: 0 5px;
-        // }
-        // p:nth-child(3) {
-        //     flex: 1.5;
-        // }
-        // p:nth-child(4) {
-        //     flex: 2.5;
-        //     padding: 5px 5px;
-        // }
         &__box {
             flex-direction: row;
             padding: 0 5px;
@@ -354,7 +342,7 @@
             justify-content: space-between;
         }
         &__cont {
-            justify-content: space-between;
+            justify-content: center;
             padding: 20px 0;
         }
         .section__boxs-center {
@@ -368,7 +356,6 @@
 
         &__box-text {
             font-size: 20px;
-            // margin: 30px 0;
         }
         &__box-texte {
             font-size: 15px;
@@ -517,12 +504,6 @@
     .map__box-texte {
         display: flex;
         flex-wrap: wrap;
-        // &__box {
-        //     gap: 0 0.2vw;
-        // }
-        // &__boxs {
-        //     width: 23%;
-        // }
     }
     .map__title {
         width: 100%;

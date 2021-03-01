@@ -1,21 +1,6 @@
-// @font-face {
-//     font-family: "Stem-light";
-
-//     src: url("../fonts/Stem-light.eot");
-
-//     src: url("../fonts/Stem-light.eot") format("eot"), url("../fonts/Stem-light.woff") format("woff"),
-//         url("../fonts/Stem-light.ttf") format("truetype"), url("../fonts/Stem-light.woff2") format("woff2");
-
-//     font-weight: normal;
-
-//     font-style: normal;
-// }
-
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700;900&display=swap");
 
 body {
-    // font-family: "Noto Sans", sans-serif;
-    // font-family: "Stem-light", sans-serif;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
 }
@@ -90,75 +75,7 @@ li {
     color: #cd0003;
     align-self: flex-end;
 }
-.menu {
-    &__list {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        width: auto;
-    }
-    &__list-item {
-        margin-left: 20px;
-    }
-}
-/************** ANIMASHION*******************/
-.menu__list li:hover .podmenu__list li:first-of-type {
-    animation: podmenu__list 0.3s ease-in-out forwards;
-    animation-delay: 0.3s;
-}
 
-.menu__list li:hover .podmenu__list li:nth-of-type(2) {
-    animation: podmenu__list 0.3s ease-in-out forwards;
-    animation-delay: 0.6s;
-}
-
-.menu__list li:hover .podmenu__list li:nth-of-type(3) {
-    animation: podmenu__list 0.3s ease-in-out forwards;
-    animation-delay: 0.9s;
-}
-@keyframes podmenu__list {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/*****************/
-.list {
-    &__podmenu {
-        &:hover .podmenu__list,
-        &:focus .podmenu__list {
-            opacity: 1;
-        }
-        li a {
-            background-color: rgba(0, 0, 0, 0.75);
-        }
-    }
-}
-.podmenu {
-    &__list {
-        font-size: 18px;
-        opacity: 0;
-        transform-origin: top center;
-        position: absolute;
-        min-width: 160px;
-        z-index: 1;
-        margin-left: -14px;
-        a {
-            float: none;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-        li {
-            opacity: 0;
-            transform-origin: top center;
-        }
-    }
-}
 /********SECTION**********/
 .section__container {
     overflow: hidden;
@@ -167,7 +84,7 @@ li {
     margin: 0;
 }
 .section {
-    padding: 0 5px;
+    padding: 2.5rem 0.5rem;
     border-top: solid 0.5px #fff;
     text-align: center;
     &__container {
@@ -186,6 +103,7 @@ li {
     }
 
     &__cont {
+        margin: 0 auto;
         display: flex; /************** БЛОКИ С ВИДЕО ********/
         flex-wrap: wrap;
         justify-content: center;
@@ -790,7 +708,7 @@ li {
     &:target {
         border-radius: 9px;
         // border: 1px solid #fff;
-        background-color: #666;
+        background-color: #363636;
         transition: all 0.75s ease-out;
     }
 }
