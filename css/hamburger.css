@@ -1,3 +1,9 @@
+.oh {
+  overflow: hidden;
+  padding-right: 15px;
+  height: 100vh;
+}
+
 #menu__toggle {
   opacity: 0;
 }
@@ -177,46 +183,15 @@
             box-shadow: none;
   }
   /************** ANIMASHION*******************/
-  .menu__box li a:focus-visible .podmenu__list li:first-of-type,
-  .menu__box li:hover .podmenu__list li:first-of-type {
-    -webkit-animation: podmenu__list 0.3s ease-in-out forwards;
-            animation: podmenu__list 0.3s ease-in-out forwards;
-    -webkit-animation-delay: 0.3s;
-            animation-delay: 0.3s;
-  }
-  .menu__box li a:focus-visible .podmenu__list li:nth-of-type(2),
-  .menu__box li:hover .podmenu__list li:nth-of-type(2) {
-    -webkit-animation: podmenu__list 0.3s ease-in-out forwards;
-            animation: podmenu__list 0.3s ease-in-out forwards;
-    -webkit-animation-delay: 0.6s;
-            animation-delay: 0.6s;
-  }
-  .menu__box li a:focus-visible .podmenu__list li:nth-of-type(3),
-  .menu__box li:hover .podmenu__list li:nth-of-type(3) {
-    -webkit-animation: podmenu__list 0.3s ease-in-out forwards;
-            animation: podmenu__list 0.3s ease-in-out forwards;
-    -webkit-animation-delay: 0.9s;
-            animation-delay: 0.9s;
-  }
-  @-webkit-keyframes podmenu__list {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes podmenu__list {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  .menu__box li:hover .podmenu__list {
+    -webkit-transition-duration: 0.8s;
+            transition-duration: 0.8s;
   }
   /*****************/
   .list__podmenu:hover .podmenu__list {
     opacity: 1;
+    -webkit-transition-duration: 0.8s;
+            transition-duration: 0.8s;
   }
   .list__podmenu li a {
     background-color: rgba(0, 0, 0, 0.9);
@@ -233,6 +208,12 @@
     min-width: 160px;
     z-index: 1;
     margin-left: -14px;
+    background-color: rgba(0, 0, 0, 0.9);
+    -webkit-transition-duration: 0.8s;
+            transition-duration: 0.8s;
+  }
+  .podmenu__list:hover {
+    background-color: rgba(0, 0, 0, 0.9);
   }
   .podmenu__list a {
     float: none;
@@ -242,7 +223,6 @@
     text-align: left;
   }
   .podmenu__list li {
-    opacity: 0;
     -webkit-transform-origin: top center;
             transform-origin: top center;
   }

@@ -1,3 +1,8 @@
+.oh {
+    overflow: hidden;
+    padding-right: 15px;
+    height: 100vh;
+}
 #menu__toggle {
     opacity: 0;
 }
@@ -168,28 +173,8 @@
     //     }
     // }
     /************** ANIMASHION*******************/
-    .menu__box li a:focus-visible .podmenu__list li:first-of-type,
-    .menu__box li:hover .podmenu__list li:first-of-type {
-        animation: podmenu__list 0.3s ease-in-out forwards;
-        animation-delay: 0.3s;
-    }
-    .menu__box li a:focus-visible .podmenu__list li:nth-of-type(2),
-    .menu__box li:hover .podmenu__list li:nth-of-type(2) {
-        animation: podmenu__list 0.3s ease-in-out forwards;
-        animation-delay: 0.6s;
-    }
-    .menu__box li a:focus-visible .podmenu__list li:nth-of-type(3),
-    .menu__box li:hover .podmenu__list li:nth-of-type(3) {
-        animation: podmenu__list 0.3s ease-in-out forwards;
-        animation-delay: 0.9s;
-    }
-    @keyframes podmenu__list {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
+    .menu__box li:hover .podmenu__list {
+        transition-duration: 0.8s;
     }
 
     /*****************/
@@ -197,6 +182,7 @@
         &__podmenu {
             &:hover .podmenu__list {
                 opacity: 1;
+                transition-duration: 0.8s;
             }
             li a {
                 background-color: rgba(0, 0, 0, 0.9);
@@ -215,6 +201,11 @@
             min-width: 160px;
             z-index: 1;
             margin-left: -14px;
+            background-color: rgba(0, 0, 0, 0.9);
+            transition-duration: 0.8s;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.9);
+            }
             a {
                 float: none;
                 padding: 3px 16px;
@@ -223,7 +214,6 @@
                 text-align: left;
             }
             li {
-                opacity: 0;
                 transform-origin: top center;
             }
         }
