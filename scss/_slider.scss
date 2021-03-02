@@ -44,6 +44,7 @@
         max-height: 530px;
         outline: none;
         overflow: hidden;
+        z-index: 0 !important;
         img {
             width: 100%;
         }
@@ -127,6 +128,7 @@
     margin: 0 auto;
     position: relative;
     max-width: 85%;
+    z-index: 0;
     .slide__item {
         width: 80%;
         outline: none;
