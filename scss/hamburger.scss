@@ -17,7 +17,7 @@
     transform: rotate(90deg);
     background-color: #cd0003;
 }
-#menu__toggle:checked ~ .menu__box {
+#menu__toggle:checked ~ .menu-wrapper {
     visibility: visible;
     top: 0;
     border-radius: 0;
@@ -59,8 +59,10 @@
     content: "";
     top: 8px;
 }
-
 .menu__box {
+    padding: 50px 0;
+}
+.menu-wrapper {
     display: block;
     visibility: hidden;
     position: fixed;
@@ -71,11 +73,14 @@
     height: 100%;
     overflow-y: auto;
     margin: 0;
-    padding: 50px 0;
+
     text-align: center;
+
     list-style: none;
+
     background-color: #333;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+
     transition-duration: 0.8s;
 }
 
@@ -116,16 +121,16 @@
     .menu__btn {
         display: none;
     }
-    .hamburger-menu {
-        position: relative;
-    }
     .menu__box {
-        visibility: inherit;
         display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 2rem;
+        padding: 0;
+    }
+    .menu-wrapper {
+        visibility: inherit;
         position: static;
-        position: absolute;
-        top: -1rem;
-        right: 0;
         width: auto;
         height: auto;
 
@@ -139,9 +144,7 @@
 
         background-color: transparent;
         box-shadow: none;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 2rem;
+        margin-top: -2.5rem;
     }
     .podmenu__item,
     .menu__item {

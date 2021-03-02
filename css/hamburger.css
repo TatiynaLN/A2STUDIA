@@ -24,7 +24,7 @@
   background-color: #cd0003;
 }
 
-#menu__toggle:checked ~ .menu__box {
+#menu__toggle:checked ~ .menu-wrapper {
   visibility: visible;
   top: 0;
   border-radius: 0;
@@ -72,6 +72,10 @@
 }
 
 .menu__box {
+  padding: 50px 0;
+}
+
+.menu-wrapper {
   display: block;
   visibility: hidden;
   position: fixed;
@@ -82,7 +86,6 @@
   height: 100%;
   overflow-y: auto;
   margin: 0;
-  padding: 50px 0;
   text-align: center;
   list-style: none;
   background-color: #333;
@@ -137,18 +140,22 @@
   .menu__btn {
     display: none;
   }
-  .hamburger-menu {
-    position: relative;
-  }
   .menu__box {
-    visibility: inherit;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+    padding: 0;
+  }
+  .menu-wrapper {
+    visibility: inherit;
     position: static;
-    position: absolute;
-    top: -1rem;
-    right: 0;
     width: auto;
     height: auto;
     border-radius: 0;
@@ -159,13 +166,7 @@
     background-color: transparent;
     -webkit-box-shadow: none;
             box-shadow: none;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 2rem;
+    margin-top: -2.5rem;
   }
   .podmenu__item:hover,
   .menu__item:hover {
