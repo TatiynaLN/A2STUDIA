@@ -1,5 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700;900&display=swap");
+img {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
@@ -93,15 +98,23 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  gap: 1rem;
+  width: auto;
+  max-height: 36px;
 }
 
 .tel span {
-  margin-top: 5px;
+  display: block;
+}
+
+.tel img {
+  display: block;
+  width: 20px;
 }
 
 .email {
